@@ -2,6 +2,15 @@
 const HomeComponent = {
     render: () => {
         return `
+        <header class="navbar upper-navbar">
+        <div class="header-container">
+            <nav class="menu">
+                <li><a class="site-link current" href="#/">Koti</a></li>
+                <li><a class="site-link" href="#/tuotteet">Tuotteet</a></li>
+                <li><a class="site-link" href="#/yhteystiedot">Yhteystiedot</a></li>
+            </nav>
+        </div>
+        </header>
         <section class="section">
         <h2 class="otsikko">Miten kaikki alkoi</h2>
         <div class="content-text">
@@ -15,6 +24,15 @@ const HomeComponent = {
   const Page1Component = {
     render: () => {
         return `
+        <header class="navbar upper-navbar">
+        <div class="header-container">
+            <nav class="menu">
+                <li><a class="site-link" href="#/">Koti</a></li>
+                <li><a class="site-link current" href="#/tuotteet">Tuotteet</a></li>
+                <li><a class="site-link" href="#/yhteystiedot">Yhteystiedot</a></li>
+            </nav>
+        </div>
+        </header>
         <section class="section">
         <h2 class="otsikko">Tuotteet</h2>
         <div class="content-text">
@@ -29,6 +47,15 @@ const HomeComponent = {
   const Page2Component = {
     render: () => {
         return `
+        <header class="navbar upper-navbar">
+        <div class="header-container">
+            <nav class="menu">
+                <li><a class="site-link" href="#/">Koti</a></li>
+                <li><a class="site-link" href="#/tuotteet">Tuotteet</a></li>
+                <li><a class="site-link current" href="#/yhteystiedot">Yhteystiedot</a></li>
+            </nav>
+        </div>
+        </header>
         <section class="section">
         <h2 class="otsikko">Yhteystiedot</h2>
         <div class="content-text">
