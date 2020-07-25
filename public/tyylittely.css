@@ -76,6 +76,8 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
+    border-top: 1.5px solid #A8D0E6;
+
 }
 
 .navbar ul {
@@ -108,6 +110,13 @@ footer {
     cursor: pointer;
 }
 
+.icons {
+    padding: 2px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
 
 .footer-container {
     background-color: #24305E;
