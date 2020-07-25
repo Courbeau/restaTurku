@@ -26,6 +26,7 @@ header {
     cursor: pointer;
 }
 .sivun-nimi {
+    margin-top: 10px;
     padding-bottom: 10px;
     font-family: "Arvo";
     color: cornsilk;
@@ -40,16 +41,33 @@ html, body {
     padding: 0;
 }
 
+body {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(pictures/pizzamies.jpg);
+    background-size: cover;
+}
+
 .otsikko {
     font-size: 2em;
     text-align: center;
     font-family: "Arvo";
+    color: snow;
 }
 
 .text {
+    text-align: center;
     font-size: 1.2em;
     font-family: "Roboto";
     padding: 15px;
+    color: snow;
+}
+
+.section {
+    padding-bottom: 5%;
 }
 /*Vartalon loppu*/
 /*Alavalikko osuus*/
