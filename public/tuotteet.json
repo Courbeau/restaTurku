@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nimi": "lapio",
+        "tuotekuvaus": "Tällä kaivetaan maata",
+        "pisteet": 10,
+        "kuvanNimi":"lapio.png"
+
+    },
+    {
+        "id": 2,
+        "nimi": "miekka",
+        "tuotekuvaus": "Tällä miekkaillaan",
+        "pisteet": 9,
+        "kuvanNimi":"miekka.png"
+    },
+    {
+        "id": 3,
+        "nimi": "kuokka",
+        "tuotekuvaus": "Tällä viljellään maata",
+        "pisteet": 5.5,
+        "kuvanNimi":"kuokka.png"
+
+    },
+    {   
+        "id": 4,
+        "nimi": "kirves",
+        "tuotekuvaus": "Tällä hakataan maata",
+        "pisteet": 7.5,
+        "kuvanNimi":"kirves.png"
+    }
+]
