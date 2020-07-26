@@ -7,12 +7,17 @@
 
 /*Ylävalikko osuus*/
 header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 20%;
     top: 0;
     left: 0;
 }
+
+.upper-navbar li {
+    padding: 0px 20px 0px 20px;
+}
+
 .header-container {
     background-color: #24305E;
     text-align: center;
@@ -69,10 +74,126 @@ body {
     color: snow;
 }
 
-.section {
-    padding-bottom: 5%;
-}
 /*Vartalon loppu*/
+/*Formi tyylilyylit*/
+
+.formin-tausta {
+    border: solid 2px #24305E;
+    margin: 75px;
+    margin-top: 0;
+    background-color: #374785;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+form {
+    margin-block-end: 0;
+    padding: 0;
+}
+
+.form-otsikko {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: snow;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Roboto";
+    font-weight: initial;
+}
+
+.nimi-mail-box{
+    display: flex;
+}
+
+
+input[type=text] {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+    margin-right: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: snow;
+    opacity: 1; /* Firefox */
+  }
+
+input[type=email] {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+}
+
+input:focus {
+    background-color: #A8D0E6;
+}
+textarea:focus {
+    background-color: #A8D0E6;
+}
+
+
+input[type=submit] {
+    background-color: #24305E;
+    width: 100%;
+    padding: 10px;
+    color: snow;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: snow;
+}
+
+.form-hr {
+    border-color: #A8D0E6;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+label {
+    font-family: "Roboto";
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    align-content: center;
+    color: snow;
+    font-size: 1.2em;
+}
+
+
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+
+    resize: none;
+}
+
+.kiitos-viesti {
+    color: snow;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/*Formi hommien loppu*/
 /*Alavalikko osuus*/
 footer {
     position: fixed;
