@@ -60,6 +60,7 @@ body {
 }
 
 .otsikko {
+    margin-top: 2em;
     font-size: 2em;
     text-align: center;
     font-family: "Arvo";
