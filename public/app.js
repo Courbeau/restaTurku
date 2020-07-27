@@ -27,7 +27,7 @@ const TuotteetSivu = {
             </nav>
         </div>
         </header>
-        <h2 class="otsikko">TUOTTEET</h2>
+        <h2 class="tuotteet-otsikko">TUOTTEET</h2>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
@@ -82,7 +82,7 @@ const YrityksestäSivu = {
         <div class="koko-yrityksesta-sivu">
           <div class="yrityksesta-kuva"></div>
           <div class="yrityksesta-sivu">
-            <h2 class="otsikko">MITEN KAIKKI ALKOI</h2>
+            <h2 class="yrityksesta-otsikko">MITEN KAIKKI ALKOI</h2>
             <div class="content-text">
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper mauris nulla, id dapibus ante lobortis non. Integer hendrerit turpis lectus, in congue metus volutpat nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam cursus convallis erat, a auctor augue euismod a. Duis accumsan sem et scelerisque dignissim. Integer dictum bibendum tellus, vel ullamcorper libero euismod tincidunt. Nunc mollis metus a lacus tristique, sed suscipit orci lobortis. Morbi et rhoncus mi. Fusce mi nunc, iaculis mollis arcu in, posuere condimentum neque. Proin vitae neque tempus, scelerisque tortor ut, convallis neque. Nam a feugiat nulla, feugiat volutpat nulla. Proin malesuada magna in ultricies accumsan. Etiam vitae tristique quam. Duis commodo condimentum enim, non euismod arcu. Suspendisse vitae arcu pulvinar, dictum orci non, venenatis urna. Proin vestibulum sodales odio in maximus.</p>
             </div>

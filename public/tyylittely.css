@@ -7,26 +7,46 @@
     src: url(fonts/Rowdies-Regular.ttf);
 }
 /*yrityksestä sivun layout*/
-.koko-yrityksesta-sivu {
-    display: flex;
+
+@media only screen and (min-width: 800px) {
+    .koko-yrityksesta-sivu {
+        display: flex;
+    }
+    
+    .yrityksesta-kuva {
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)
+            ),
+            url(pictures/pizzauuni.jpg);
+        background-size: cover;
+        min-width: 50%;
+        max-width: 50%;
+    }
+    
+    .yrityksesta-sivu {
+        max-width: 50%;
+        min-width: 50%;
+    }
 }
 
-.yrityksesta-kuva {
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.4),
-            rgba(0,0,0,0.4)
-        ),
-        url(pictures/pizzauuni.jpg);
-    background-size: cover;
-    min-width: 50%;
-    max-width: 50%;
+@media only screen and (max-width: 799px) {
+    .yrityksesta-kuva {
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)
+            ),
+            url(pictures/pizzamies.jpg);
+        background-size: cover;
+        min-width: 100%;
+        max-width: 100%;
+        height: 40%;
+    }
 }
 
-.yrityksesta-sivu {
-    max-width: 50%;
-    min-width: 50%;
-}
+
 /*ysl loppu*/
 
 /*puhelin,s-posti iconit ja y-tunnus ja osoite*/
@@ -56,7 +76,7 @@
 
 .company-name {
     margin-top: 1em;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
     font-weight: bold;
     font-family: "Rowdies";
@@ -145,9 +165,19 @@ body {
     background-color: #E9ebee;
 }
 
-.otsikko {
+.tuotteet-otsikko {
     margin-top: 1em;
-    font-size: 4em;
+    font-size: 4.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #fccd04;
+
+}
+
+.yrityksesta-otsikko {
+    margin-top: 1em;
+    font-size: 2.5em;
     text-align: center;
     font-weight: bold;
     font-family: "Roboto";
@@ -156,7 +186,7 @@ body {
 
 .text {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: "Roboto";
     padding: 15px;
     color: #444;
