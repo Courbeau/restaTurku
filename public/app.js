@@ -12,7 +12,7 @@ const TuotteetSivu = {
     },
     render: () => {
         return `
-        ${Yläpalkki.render()}
+        ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">TUOTTEET</h2>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
@@ -56,14 +56,14 @@ const Yläpalkki = {
       router();
     })
   },
-  render: () => {
+  render: (sivu) => {
     setTimeout(Yläpalkki.kieliVaihto, 0);
     return `
     <header class="navbar upper-navbar">
         <div class="header-container">
             <nav class="menu">
-                <li><a class="site-link" href="#/">Tuotteet</a></li>
-                <li><a class="site-link" href="#/yhteystiedot">Yrityksestä</a></li>
+                <li><a class="site-link ${sivu === "tuotteet" ? "current" : ""}" href="#/">Tuotteet</a></li>
+                <li><a class="site-link ${sivu === "yrityksesta" ? "current" : ""}" href="#/yhteystiedot">Yrityksestä</a></li>
                 <li><form class="kieli-valikko">
                 <select class="kieli-valikko-selecti">
                   <option value="FI" ${window.kieli === "FI" ? "selected" : ""}>Suomi</option>
@@ -82,7 +82,7 @@ const Yläpalkki = {
 const YrityksestäSivu = {
     render: () => {
         return `
-        ${Yläpalkki.render()}
+        ${Yläpalkki.render("yrityksesta")}
         <div class="koko-yrityksesta-sivu">
           <div class="yrityksesta-kuva"><p class="ekologiset-tuotteet">-Meiltä 100% ekologiset tuotteet!-</p></div>
           <div class="yrityksesta-sivu">
