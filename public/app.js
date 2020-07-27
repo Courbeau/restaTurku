@@ -3,7 +3,7 @@ const TuotteetSivu = {
     renderTuote: (tuote) => {
       return `
       <div class="tuote-container">
-        <h3 class="tuote-nimi">${tuote.nimi}</h3>
+        <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
         <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
         <div class="tuote-pisteet">Pisteet: ${tuote.pisteet}/10</div>
         <div class="tuote-kuvaus">${tuote.tuotekuvaus}</div>
@@ -12,21 +12,7 @@ const TuotteetSivu = {
     },
     render: () => {
         return `
-        <header class="navbar upper-navbar">
-        <div class="header-container">
-            <nav class="menu">
-                <li><a class="site-link current" href="#/">Tuotteet</a></li>
-                <li><a class="site-link" href="#/yhteystiedot">Yrityksestä</a></li>
-                <li><form class="kieli-valikko">
-                  <select class="kieli-valikko-selecti">
-                  <option value="FI">Suomi-FI</option>
-                  <option value="SV">Svenska-SV</option>
-                  <option value="EN">English-EN</option>
-                  </select>
-                </form></li>
-            </nav>
-        </div>
-        </header>
+        ${Yläpalkki.render()}
         <h2 class="tuotteet-otsikko">TUOTTEET</h2>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
@@ -61,24 +47,42 @@ const MessageForm = {
     }
 }
 
-const YrityksestäSivu = {
-    render: () => {
-        return `
-        <header class="navbar upper-navbar">
+const Yläpalkki = {
+  kieliVaihto: (event) => {
+    const selecti = window.document.getElementsByClassName('kieli-valikko-selecti')[0];
+    selecti.addEventListener('change', (event) => {
+      window.kieli = event.target.value;
+      window.localStorage.setItem('kieli', window.kieli);
+      router();
+    })
+  },
+  render: () => {
+    setTimeout(Yläpalkki.kieliVaihto, 0);
+    return `
+    <header class="navbar upper-navbar">
         <div class="header-container">
             <nav class="menu">
                 <li><a class="site-link" href="#/">Tuotteet</a></li>
-                <li><a class="site-link current" href="#/yhteystiedot">Yrityksestä</a></li>
+                <li><a class="site-link" href="#/yhteystiedot">Yrityksestä</a></li>
                 <li><form class="kieli-valikko">
                 <select class="kieli-valikko-selecti">
-                <option id="suomi-nappula" value="FI">Suomi-FI</option>
-                <option id="ruotsi-nappula" value="SV">Svenska-SV</option>
-                <option id="englanti-nappula" value="EN">English-EN</option>
+                  <option value="FI" ${window.kieli === "FI" ? "selected" : ""}>Suomi</option>
+                  <option value="SV" ${window.kieli === "SV" ? "selected" : ""}>Svenska</option>
+                  <option value="EN" ${window.kieli === "EN" ? "selected" : ""}>English</option>
                 </select>
               </form></li>
             </nav>
         </div>
         </header>
+    `
+  }
+
+}
+
+const YrityksestäSivu = {
+    render: () => {
+        return `
+        ${Yläpalkki.render()}
         <div class="koko-yrityksesta-sivu">
           <div class="yrityksesta-kuva"><p class="ekologiset-tuotteet">-Meiltä 100% ekologiset tuotteet!-</p></div>
           <div class="yrityksesta-sivu">
@@ -136,15 +140,4 @@ const routes = [
   };
 
   window.addEventListener('hashchange', router);
-  window.addEventListener('load', router);
-
-  const suomiNappula = document.getElementById("suomi-nappula")
-  console.log(suomiNappula)
-  
-  painettuFn = function() {
-        console.log("Suomi-nappulaa on painettu");
-  }
-
-  suomiNappula.addEventListener("click", painettuFn);
-
-  
+  window.addEventListener('load', router);  

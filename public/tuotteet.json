@@ -1,6 +1,10 @@
 [
     {
-        "nimi": "Lapio",
+        "nimi": {
+            "FI": "Lapio",
+            "SV": "Laapiå",
+            "EN": "Showel"
+        },
         "tuotekuvaus": "Tällä kaivetaan maata",
         "pisteet": 10,
         "kuvanNimi":"pictures/lapio.png"
