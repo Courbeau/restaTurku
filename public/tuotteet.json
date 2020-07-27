@@ -24,5 +24,57 @@
         "tuotekuvaus": "Tällä hakataan maata",
         "pisteet": 7.5,
         "kuvanNimi":"pictures/kirves.png"
+    },
+    {
+        "nimi": "Lapio",
+        "tuotekuvaus": "Tällä kaivetaan maata",
+        "pisteet": 10,
+        "kuvanNimi":"pictures/lapio.png"
+
+    },
+    {
+        "nimi": "Miekka",
+        "tuotekuvaus": "Tällä miekkaillaan",
+        "pisteet": 9,
+        "kuvanNimi":"pictures/miekka.png"
+    },
+    {
+        "nimi": "Kuokka",
+        "tuotekuvaus": "Tällä viljellään maata",
+        "pisteet": 5.5,
+        "kuvanNimi":"pictures/kuokka.png"
+
+    },
+    {   
+        "nimi": "Kirves",
+        "tuotekuvaus": "Tällä hakataan maata",
+        "pisteet": 7.5,
+        "kuvanNimi":"pictures/kirves.png"
+    },
+    {
+        "nimi": "Lapio",
+        "tuotekuvaus": "Tällä kaivetaan maata",
+        "pisteet": 10,
+        "kuvanNimi":"pictures/lapio.png"
+
+    },
+    {
+        "nimi": "Miekka",
+        "tuotekuvaus": "Tällä miekkaillaan",
+        "pisteet": 9,
+        "kuvanNimi":"pictures/miekka.png"
+    },
+    {
+        "nimi": "Kuokka",
+        "tuotekuvaus": "Tällä viljellään maata",
+        "pisteet": 5.5,
+        "kuvanNimi":"pictures/kuokka.png"
+
+    },
+    {   
+        "nimi": "Kirves",
+        "tuotekuvaus": "Tällä hakataan maata",
+        "pisteet": 7.5,
+        "kuvanNimi":"pictures/kirves.png"
     }
 ]

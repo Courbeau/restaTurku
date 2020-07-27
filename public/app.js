@@ -80,7 +80,7 @@ const YrityksestäSivu = {
         </div>
         </header>
         <div class="koko-yrityksesta-sivu">
-          <div class="yrityksesta-kuva"></div>
+          <div class="yrityksesta-kuva"><p class="ekologiset-tuotteet">-Meiltä 100% ekologiset tuotteet!-</p></div>
           <div class="yrityksesta-sivu">
             <h2 class="yrityksesta-otsikko">MITEN KAIKKI ALKOI</h2>
             <div class="content-text">
@@ -89,11 +89,11 @@ const YrityksestäSivu = {
             <div class="kaikki-iconsit-kaikki-muut">
               <div class="iconi-muu puhelin_y-tunnus">
                 <a href="tel:000000000"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a>
-                <p class="y-tunnus">Y-tunnus</p>
+                <p class="y-tunnus">Y-tunnus: 2239554-1</p>
               </div>
               <div class="iconi-muu s-posti&osite">
                 <a href="mailto:john@example.com"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"></a>
-                <p class="Osoite">Osoite</p>
+                <p class="Osoite">Ahertajantie 5, 15880 HOLLOLA</p>
               </div>
             </div>
             <h1 class="company-name">Resta Turku OY</h1>

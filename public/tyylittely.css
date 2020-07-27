@@ -24,6 +24,14 @@
         min-width: 50%;
         max-width: 50%;
     }
+
+    .ekologiset-tuotteet {
+        text-align: center;
+        line-height: 100vh; 
+        color: snow;
+        font-family: "Rowdies";
+        font-size: 1.35em;
+    }
     
     .yrityksesta-sivu {
         max-width: 50%;
@@ -43,6 +51,13 @@
         min-width: 100%;
         max-width: 100%;
         height: 40%;
+    }
+    .ekologiset-tuotteet {
+        text-align: center;
+        line-height: 40vh; 
+        color: snow;
+        font-family: "Rowdies";
+        font-size: 1.35em;
     }
 }
 
