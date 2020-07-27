@@ -1,5 +1,15 @@
 // Components
 const TuotteetSivu = {
+    renderTuote: (tuote) => {
+      return `
+      <div class="tuote-container">
+        <h3 class="tuote-nimi">${tuote.nimi}</h3>
+        <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
+        <div class="tuote-pisteet">Pisteet: ${tuote.pisteet}/10</div>
+        <div class="tuote-kuvaus">${tuote.tuotekuvaus}</div>
+      </div>  
+      `
+    },
     render: () => {
         return `
         <header class="navbar upper-navbar">
@@ -7,11 +17,21 @@ const TuotteetSivu = {
             <nav class="menu">
                 <li><a class="site-link current" href="#/">Tuotteet</a></li>
                 <li><a class="site-link" href="#/yhteystiedot">Yrityksestä</a></li>
+                <li><form class="kieli-valikko">
+                  <select class="kieli-valikko-selecti">
+                  <option value="FI">Suomi-FI</option>
+                  <option value="SV">Svenska-SV</option>
+                  <option value="EN">English-EN</option>
+                  </select>
+                </form></li>
             </nav>
         </div>
         </header>
         <section class="section">
-        <h2 class="otsikko">Tuotteet</h2>
+        <h2 class="otsikko">TUOTTEET</h2>
+        <section class="kaikki-tuotteet-container">
+          ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
+        </section>
         </section>
         `;
     }
@@ -51,13 +71,30 @@ const YrityksestäSivu = {
             <nav class="menu">
                 <li><a class="site-link" href="#/">Tuotteet</a></li>
                 <li><a class="site-link current" href="#/yhteystiedot">Yrityksestä</a></li>
+                <li><form class="kieli-valikko">
+                <select class="kieli-valikko-selecti">
+                <option id="suomi-nappula" value="FI">Suomi-FI</option>
+                <option id="ruotsi-nappula" value="SV">Svenska-SV</option>
+                <option id="englanti-nappula" value="EN">English-EN</option>
+                </select>
+              </form></li>
             </nav>
         </div>
         </header>
         <section class="section">
-        <h2 class="otsikko">Miten kaikki alkoi</h2>
+        <h2 class="otsikko">MITEN KAIKKI ALKOI</h2>
         <div class="content-text">
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper mauris nulla, id dapibus ante lobortis non. Integer hendrerit turpis lectus, in congue metus volutpat nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam cursus convallis erat, a auctor augue euismod a. Duis accumsan sem et scelerisque dignissim. Integer dictum bibendum tellus, vel ullamcorper libero euismod tincidunt. Nunc mollis metus a lacus tristique, sed suscipit orci lobortis. Morbi et rhoncus mi. Fusce mi nunc, iaculis mollis arcu in, posuere condimentum neque. Proin vitae neque tempus, scelerisque tortor ut, convallis neque. Nam a feugiat nulla, feugiat volutpat nulla. Proin malesuada magna in ultricies accumsan. Etiam vitae tristique quam. Duis commodo condimentum enim, non euismod arcu. Suspendisse vitae arcu pulvinar, dictum orci non, venenatis urna. Proin vestibulum sodales odio in maximus.</p>
+        </div>
+        <div class="kaikki-iconsit-kaikki-muut">
+          <div class="iconi-muu puhelin_y-tunnus">
+            <a href="tel:000000000"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a>
+            <p class="y-tunnus">Y-tunnus</p>
+          </div>
+          <div class="iconi-muu s-posti&osite">
+            <a href="mailto:john@example.com"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"></a>
+            <p class="Osoite">Osoite</p>
+          </div>
         </div>
         </section>
         ` + MessageForm.render();
@@ -87,7 +124,7 @@ const routes = [
   const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gm'))) || undefined;
 
 
-  const router = () => {  
+  const router = () => {
     //  Find the component based on the current path
     const path = parseLocation();
     const { component = ErrorComponent } = findComponentByPath(path, routes) || {}
@@ -97,3 +134,14 @@ const routes = [
 
   window.addEventListener('hashchange', router);
   window.addEventListener('load', router);
+
+  const suomiNappula = document.getElementById("suomi-nappula")
+  console.log(suomiNappula)
+  
+  painettuFn = function() {
+        console.log("Suomi-nappulaa on painettu");
+  }
+
+  suomiNappula.addEventListener("click", painettuFn);
+
+  

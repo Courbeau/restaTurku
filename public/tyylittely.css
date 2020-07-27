@@ -1,10 +1,31 @@
 @font-face {
     font-family: "Arvo";
-    src: url(fonts/Arvo-Bold.ttf);
+    src: url(fonts/OpenSans-Regular.ttf);
     font-family: "Roboto";
     src: url(fonts/Roboto-Medium.ttf);
 }
 
+/*puhelin,s-posti iconit ja y-tunnus ja osoite*/
+.kaikki-iconsit-kaikki-muut {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.iconi-muu {
+    background-color: aquamarine;
+    min-width: 45%;
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 5%;
+    text-align: center;
+    padding-bottom: 0;
+
+}
+
+.icon {
+    cursor: pointer;
+}
+/**/
 /*Ylävalikko osuus*/
 header {
     position: fixed;
@@ -26,6 +47,40 @@ header {
     border-bottom: 2px solid #A8D0E6;
 
 }
+.navbar a {
+    display: inline-block;
+    padding: 0.5em;
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Lucida Sans';
+}
+
+.kieli-valikko {
+    display: inline-block;    
+}
+.kieli-valikko-selecti {
+    border: none;
+    background-color: #24305E;
+    padding: 0.65em;
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Lucida Sans';
+}
+
+.kieli-valikko-selecti:hover {
+    background-color: #374785;
+    cursor: pointer;
+}
+
+
+
+.navbar li {
+    display: inline;
+}
+
+
 .site-link:hover {
     background-color: #374785;
     cursor: pointer;
@@ -50,21 +105,16 @@ html, body {
 }
 
 body {
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0,0,0,0.5)
-        ),
-        url(pictures/pizzamies.jpg);
-    background-size: cover;
+    background-color: snow;
 }
 
 .otsikko {
-    margin-top: 2em;
-    font-size: 2em;
+    margin-top: 1em;
+    font-size: 4em;
     text-align: center;
-    font-family: "Arvo";
-    color: snow;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #fccd04;
 }
 
 .text {
@@ -72,7 +122,7 @@ body {
     font-size: 1.2em;
     font-family: "Roboto";
     padding: 15px;
-    color: snow;
+    color: #444;
 }
 
 /*Vartalon loppu*/
@@ -195,54 +245,45 @@ textarea {
 }
 
 /*Formi hommien loppu*/
-/*Alavalikko osuus*/
-footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    border-top: 2px solid #A8D0E6;
-
+/*Tuote tyylittelyt*/
+.kaikki-tuotteet-container {
+    text-align: center;
 }
 
-.navbar ul {
-    margin: 0;
-}
-.navbar li {
-    display: inline;
-}
-.navbar a {
+.tuote-container {
+    text-align: center; 
     display: inline-block;
-    padding: 0.5em;
-    color: cornsilk;
-    text-decoration: none;
-    font-weight: bolder;
-    font-family: 'Lucida Sans';
+    background-color: white;
+    border: 5px solid #777;
+    border-radius: 5%;
+    width: 176px;
+    height: 240px;
+    padding: 20px;
+    margin: 20px;
 }
 
-.lower-navbar li {
-    padding: 0px 20px 0px 20px;
+.tuote-nimi {
+    color: #333;
+    font-weight: 700;
+    font-size: 1.9em;
+    font-family: "Arvo";
 }
 
-.lang-link:last-child {
-    padding-right: 10px;
-}
-.lang-link:hover {
-    background-color: #374785;
-    cursor: pointer;
+.tuote-kuva {
+    max-height: 100px;
+    max-width: 100px;
+    margin-bottom: 10px;
 }
 
-.icons {
-    padding: 2px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    float: left;
+.tuote-pisteet {
+    color: #555;
+    font-weight: bold;
+    font-family: "Roboto";
 }
 
-.footer-container {
-    background-color: #24305E;
-    text-align: right;
+.tuote-kuvaus {
+    color: #555;
+    font-weight: initial;
+    font-size: 1.25em;
 }
-
-/*Alavalikko osuus*/
+/*Tuote tyylittelyt loppu*/

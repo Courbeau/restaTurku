@@ -5,27 +5,16 @@
     <title>Resta Turku OY | Koti</title>
     <link rel="stylesheet" href="tyylittely.css">
     <script type="text/javascript" src="./app.js"></script>
+    <script>
+        fetch("./tuotteet.json").then(async (response) => {
+            window.tuotteet = await response.json()
+            router()
+        })
+    </script>
 </head>
 <body>
    
     <section id="app"></section>
-    <footer class="footer">
-        <div class="footer-container">
-            <nav class="navbar lower-navbar">
-                <ul>
-                    <li>
-                        <a class="lang-link current" href="#/">FIN</a>
-                    </li>
-                    <li>
-                        <a class="lang-link" href="">SVE</a>
-                    </li>
-                    <li>
-                        <a class="lang-link" href="">ENG</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
 </body>
 </html>
