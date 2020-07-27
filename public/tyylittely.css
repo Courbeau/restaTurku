@@ -1,9 +1,33 @@
 @font-face {
-    font-family: "Arvo";
-    src: url(fonts/OpenSans-Regular.ttf);
     font-family: "Roboto";
     src: url(fonts/Roboto-Medium.ttf);
+    }
+@font-face {
+    font-family: "Rowdies";
+    src: url(fonts/Rowdies-Regular.ttf);
 }
+/*yrityksestä sivun layout*/
+.koko-yrityksesta-sivu {
+    display: flex;
+}
+
+.yrityksesta-kuva {
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.4),
+            rgba(0,0,0,0.4)
+        ),
+        url(pictures/pizzauuni.jpg);
+    background-size: cover;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.yrityksesta-sivu {
+    max-width: 50%;
+    min-width: 50%;
+}
+/*ysl loppu*/
 
 /*puhelin,s-posti iconit ja y-tunnus ja osoite*/
 .kaikki-iconsit-kaikki-muut {
@@ -12,18 +36,31 @@
 }
 
 .iconi-muu {
-    background-color: aquamarine;
     min-width: 45%;
     padding-top: 10px;
     margin: auto;
-    border-radius: 5%;
+    border-radius: 15px;
     text-align: center;
     padding-bottom: 0;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: "Roboto";
 
 }
 
 .icon {
+    padding-top: 10px;
     cursor: pointer;
+}
+
+.company-name {
+    margin-top: 1em;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Rowdies";
+    color: #fccd04;
 }
 /**/
 /*Ylävalikko osuus*/
@@ -88,7 +125,7 @@ header {
 .sivun-nimi {
     margin-top: 10px;
     padding-bottom: 10px;
-    font-family: "Arvo";
+    font-family: "Roboto";
     color: cornsilk;
 }
 
@@ -105,7 +142,7 @@ html, body {
 }
 
 body {
-    background-color: snow;
+    background-color: #E9ebee;
 }
 
 .otsikko {
@@ -130,7 +167,7 @@ body {
 
 .formin-tausta {
     border: solid 2px #24305E;
-    margin: 75px;
+    margin: 30px;
     margin-top: 0;
     background-color: #374785;
     border-radius: 8px;
@@ -266,7 +303,7 @@ textarea {
     color: #333;
     font-weight: 700;
     font-size: 1.9em;
-    font-family: "Arvo";
+    font-family: "Roboto";
 }
 
 .tuote-kuva {
