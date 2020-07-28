@@ -19,6 +19,7 @@ const TuotteetSivu = {
         </section>
         <div id="ostos-sivu"></div>
         <div id="popup">
+          <h1>Esimerkki tuote</h1>
           <a class="sulje-btn" onclick="toggle()">Sulje</a>
         </div>
 
