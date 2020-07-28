@@ -234,14 +234,14 @@ body {
     background-color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 #popup.active {
     top: 50%;
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .sulje-btn {
