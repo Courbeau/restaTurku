@@ -5,80 +5,72 @@
             "SV": "Skyffel",
             "EN": "Shovel"
         },
-        "tuotekuvaus": "Tällä kaivetaan maata",
-        "pisteet": 10,
+        "tuotekuvaus": {
+            "FI": "Tällä kaivetaan maata",
+            "SV": "Med detta kan du gräva mark",
+            "EN": "With this you can dig ground"
+        },
+        "pisteet": {
+            "FI": "Pisteet: 10/10",
+            "SV": "Poäng: 10/10",
+            "EN": "Points: 10/10"   
+        },
         "kuvanNimi":"pictures/lapio.png"
 
     },
     {
-        "nimi": "Miekka",
-        "tuotekuvaus": "Tällä miekkaillaan",
-        "pisteet": 9,
+        "nimi": {
+            "FI": "Miekka",
+            "SV": "Skyffel",
+            "EN": "Sword"
+        },
+        "tuotekuvaus": {
+            "FI": "Tällä miekkaillaan",
+            "SV": "asdasfafa",
+            "EN": "With this you fight enemies"
+        },
+        "pisteet": {
+            "FI": "Pisteet: 9/10",
+            "SV": "Poäng: 9/10",
+            "EN": "Points: 9/10"   
+        },
         "kuvanNimi":"pictures/miekka.png"
     },
     {
-        "nimi": "Kuokka",
-        "tuotekuvaus": "Tällä viljellään maata",
-        "pisteet": 5.5,
+        "nimi": {
+            "FI": "Kuokka",
+            "SV": "Skyffel",
+            "EN": "Hoe"
+        },
+        "tuotekuvaus": {
+            "FI": "Tällä viljellään maata",
+            "SV": "jasfanksflaf",
+            "EN": "With this you farm land"
+        },
+            "pisteet": {
+            "FI": "Pisteet: 7/10",
+            "SV": "Poäng: 7/10",
+            "EN": "Points: 7/10"   
+        },
         "kuvanNimi":"pictures/kuokka.png"
 
     },
     {   
-        "nimi": "Kirves",
-        "tuotekuvaus": "Tällä hakataan maata",
-        "pisteet": 7.5,
-        "kuvanNimi":"pictures/kirves.png"
-    },
-    {
-        "nimi": "Lapio",
-        "tuotekuvaus": "Tällä kaivetaan maata",
-        "pisteet": 10,
-        "kuvanNimi":"pictures/lapio.png"
-
-    },
-    {
-        "nimi": "Miekka",
-        "tuotekuvaus": "Tällä miekkaillaan",
-        "pisteet": 9,
-        "kuvanNimi":"pictures/miekka.png"
-    },
-    {
-        "nimi": "Kuokka",
-        "tuotekuvaus": "Tällä viljellään maata",
-        "pisteet": 5.5,
-        "kuvanNimi":"pictures/kuokka.png"
-
-    },
-    {   
-        "nimi": "Kirves",
-        "tuotekuvaus": "Tällä hakataan maata",
-        "pisteet": 7.5,
-        "kuvanNimi":"pictures/kirves.png"
-    },
-    {
-        "nimi": "Lapio",
-        "tuotekuvaus": "Tällä kaivetaan maata",
-        "pisteet": 10,
-        "kuvanNimi":"pictures/lapio.png"
-
-    },
-    {
-        "nimi": "Miekka",
-        "tuotekuvaus": "Tällä miekkaillaan",
-        "pisteet": 9,
-        "kuvanNimi":"pictures/miekka.png"
-    },
-    {
-        "nimi": "Kuokka",
-        "tuotekuvaus": "Tällä viljellään maata",
-        "pisteet": 5.5,
-        "kuvanNimi":"pictures/kuokka.png"
-
-    },
-    {   
-        "nimi": "Kirves",
-        "tuotekuvaus": "Tällä hakataan maata",
-        "pisteet": 7.5,
+        "nimi": {            
+            "FI": "Kirves",
+            "SV": "Skyffel",
+            "EN": "Axe"
+        },
+        "tuotekuvaus": {
+            "FI": "Tällä hakataan maata",
+            "SV": "sjasfanckacn",
+            "EN": "With this you punch trees"
+        },
+        "pisteet": {            
+            "FI": "Pisteet: 5/10",
+            "SV": "Poäng: 5/10",
+            "EN": "Points: 5/10"   
+        },
         "kuvanNimi":"pictures/kirves.png"
     }
 ]

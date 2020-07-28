@@ -2,12 +2,12 @@
 const TuotteetSivu = {
     renderTuote: (tuote) => {
       return `
-      <div class="tuote-container">
+      <a onClick="toggle()" class="tuote-container">
         <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
         <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
-        <div class="tuote-pisteet">Pisteet: ${tuote.pisteet}/10</div>
-        <div class="tuote-kuvaus">${tuote.tuotekuvaus}</div>
-      </div>  
+        <div class="tuote-pisteet">${tuote.pisteet[window.kieli]}</div>
+        <div class="tuote-kuvaus">${tuote.tuotekuvaus[window.kieli]}</div>
+      </a>  
       `
     },
     render: () => {
@@ -17,10 +17,22 @@ const TuotteetSivu = {
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
+        <div id="ostos-sivu"></div>
+        <div id="popup">
+          <a class="sulje-btn" onclick="toggle()">Sulje</a>
+        </div>
+
         `;
     }
   } 
-  
+
+  function toggle() {
+    var blur = document.getElementById("ostos-sivu");
+    blur.classList.toggle("active");
+    var popup = document.getElementById("popup");
+    popup.classList.toggle("active");
+  }
+
 const MessageForm = {
     render: () => {
       return `
@@ -92,11 +104,11 @@ const YrityksestäSivu = {
             </div>
             <div class="kaikki-iconsit-kaikki-muut">
               <div class="iconi-muu puhelin_y-tunnus">
-                <a href="tel:000000000"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a>
+                <a href="tel:000000000"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"><br>+00000000</a>
                 <p class="y-tunnus">Y-tunnus: 2239554-1</p>
               </div>
               <div class="iconi-muu s-posti&osite">
-                <a href="mailto:john@example.com"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"></a>
+                <a href="mailto:john@example.com"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"><br>esimerkki@erno.fi</a>
                 <p class="Osoite">Ahertajantie 5, 15880 HOLLOLA</p>
               </div>
             </div>
@@ -131,8 +143,10 @@ const routes = [
   const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gm'))) || undefined;
 
 
+
+
   const router = () => {
-    //  Find the component based on the current path
+    //  Find the component based on the current path  
     const path = parseLocation();
     const { component = ErrorComponent } = findComponentByPath(path, routes) || {}
     // TODO: Render the component in the "app" placeholder
