@@ -179,6 +179,36 @@ html, body {
 body {
     background-color: #E9ebee;
 }
+
+.tuotteet-otsikko {
+    margin-top: 1em;
+    font-size: 4.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #fccd04;
+
+}
+
+.yrityksesta-otsikko {
+    margin-top: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #fccd04;
+}
+
+.text {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Roboto";
+    padding: 15px;
+    color: #444;
+}
+
+/*Vartalon loppu*/
+
 /*tuotteet blurri ja suurennus*/
 #ostos-sivu.active {
     top: 0;
@@ -186,6 +216,7 @@ body {
     left: 0;
     right: 0;
     position: fixed;
+    background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(5px);
     pointer-events: none;
     user-select: none;
@@ -227,34 +258,6 @@ body {
 
 /*loppu*/
 
-.tuotteet-otsikko {
-    margin-top: 1em;
-    font-size: 4.5em;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Roboto";
-    color: #fccd04;
-
-}
-
-.yrityksesta-otsikko {
-    margin-top: 1em;
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Roboto";
-    color: #fccd04;
-}
-
-.text {
-    text-align: center;
-    font-size: 1em;
-    font-family: "Roboto";
-    padding: 15px;
-    color: #444;
-}
-
-/*Vartalon loppu*/
 /*Formi tyylilyylit*/
 
 .formin-tausta {

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="tyylittely.css">
     <script type="text/javascript" src="./app.js"></script>
     <script>
+        window.tekstit = {
+        "FI": {
+            otsikko1: "TUOTTEET"
+        },
+        "SV": {
+            otsikko1: "PRODUKTER"
+        },
+        "EN": {
+            otsikko1: "PRODUCTS"
+        }
+        };
         window.kieli = window.localStorage.getItem('kieli') || 'FI';
         fetch("./tuotteet.json").then(async (response) => {
             window.tuotteet = await response.json()
@@ -15,8 +26,6 @@
     </script>
 </head>
 <body>
-   
     <section id="app"></section>
-
 </body>
 </html>

@@ -13,7 +13,7 @@ const TuotteetSivu = {
     render: () => {
         return `
         ${Yläpalkki.render("tuotteet")}
-        <h2 class="tuotteet-otsikko">TUOTTEET</h2>
+        <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
