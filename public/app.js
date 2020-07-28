@@ -2,7 +2,7 @@
 const TuotteetSivu = {
     renderTuote: (tuote) => {
       return `
-      <a onClick="toggle()" class="tuote-container">
+      <a href="#/tuotteet/${tuote.id}" class="tuote-container">
         <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
         <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
         <div class="tuote-pisteet">${tuote.pisteet[window.kieli]}</div>
@@ -17,22 +17,28 @@ const TuotteetSivu = {
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
-        <div id="ostos-sivu"></div>
-        <div id="popup">
-          <h1>Esimerkki tuote</h1>
-          <a class="sulje-btn" onclick="toggle()">Sulje</a>
-        </div>
-
         `;
     }
   } 
 
-  function toggle() {
-    var blur = document.getElementById("ostos-sivu");
-    blur.classList.toggle("active");
-    var popup = document.getElementById("popup");
-    popup.classList.toggle("active");
+const TuoteSivu = (tuote) => {
+  return {
+    render: () => {
+      return `
+        ${Yläpalkki.render("tuotteet")}
+        <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
+        <section class="kaikki-tuotteet-container">
+          ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
+        </section>
+        <div id="ostos-sivu" class="active"></div>
+        <div id="popup" class="active">
+          <h1>${tuote.nimi[window.kieli]}</h1>
+          <a href="#/">Sulje</a>
+        </div>
+        `;
+    }
   }
+}
 
 const MessageForm = {
     render: () => {
@@ -141,10 +147,17 @@ const routes = [
 
 
   const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
-  const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gm'))) || undefined;
+  const findComponentByPath = (path, routes) => {
+    console.log(path)
+    console.log(routes.find(r => {
+      console.log(r.path, path, r.path === path);
+      return r.path === path}))
+    return routes.find(r => r.path === path) || undefined;
+  }
 
-
-
+  const addTuoteRoute = (path, tuote) => {
+    routes.push( { path, component: TuoteSivu(tuote) } );
+  };
 
   const router = () => {
     //  Find the component based on the current path  

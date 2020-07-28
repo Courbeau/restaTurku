@@ -1,5 +1,6 @@
 [
     {
+        "id": "lapio",
         "nimi": {
             "FI": "Lapio",
             "SV": "Skyffel",
@@ -19,6 +20,8 @@
 
     },
     {
+    
+        "id": "miekka",
         "nimi": {
             "FI": "Miekka",
             "SV": "Skyffel",
@@ -37,6 +40,7 @@
         "kuvanNimi":"pictures/miekka.png"
     },
     {
+        "id": "kuokka",
         "nimi": {
             "FI": "Kuokka",
             "SV": "Skyffel",
@@ -56,80 +60,7 @@
 
     },
     {   
-        "nimi": {            
-            "FI": "Kirves",
-            "SV": "Skyffel",
-            "EN": "Axe"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä hakataan maata",
-            "SV": "sjasfanckacn adsafagdasgds gas",
-            "EN": "With this you punch trees"
-        },
-        "pisteet": {            
-            "FI": "Pisteet: 5/10",
-            "SV": "Poäng: 5/10",
-            "EN": "Points: 5/10"   
-        },
-        "kuvanNimi":"pictures/kirves.png"
-    },
-    {
-        "nimi": {
-            "FI": "Lapio",
-            "SV": "Skyffel",
-            "EN": "Shovel"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä kaivetaan maata",
-            "SV": "Med detta kan du gräva mark",
-            "EN": "With this you can dig ground"
-        },
-        "pisteet": {
-            "FI": "Pisteet: 10/10",
-            "SV": "Poäng: 10/10",
-            "EN": "Points: 10/10"   
-        },
-        "kuvanNimi":"pictures/lapio.png"
-
-    },
-    {
-        "nimi": {
-            "FI": "Miekka",
-            "SV": "Skyffel",
-            "EN": "Sword"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä miekkaillaan",
-            "SV": "asdasfafa adsafagdasgds gas",
-            "EN": "With this you fight enemies"
-        },
-        "pisteet": {
-            "FI": "Pisteet: 9/10",
-            "SV": "Poäng: 9/10",
-            "EN": "Points: 9/10"   
-        },
-        "kuvanNimi":"pictures/miekka.png"
-    },
-    {
-        "nimi": {
-            "FI": "Kuokka",
-            "SV": "Skyffel",
-            "EN": "Hoe"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä viljellään maata",
-            "SV": "jasfanksflaf adsafagdasgds gas",
-            "EN": "With this you farm land"
-        },
-            "pisteet": {
-            "FI": "Pisteet: 7/10",
-            "SV": "Poäng: 7/10",
-            "EN": "Points: 7/10"   
-        },
-        "kuvanNimi":"pictures/kuokka.png"
-
-    },
-    {   
+        "id": "kirves",
         "nimi": {            
             "FI": "Kirves",
             "SV": "Skyffel",

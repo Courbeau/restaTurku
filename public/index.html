@@ -57,7 +57,10 @@
         };
         window.kieli = window.localStorage.getItem('kieli') || 'FI';
         fetch("./tuotteet.json").then(async (response) => {
-            window.tuotteet = await response.json()
+            window.tuotteet = await response.json();
+            for(const tuote of window.tuotteet) {
+                addTuoteRoute(`/tuotteet/${tuote.id}`, tuote);
+            }
             router()
         })
     </script>
