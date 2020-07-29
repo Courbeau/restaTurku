@@ -5,8 +5,9 @@ const TuotteetSivu = {
       <a href="#/tuotteet/${tuote.id}" class="tuote-container">
         <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
         <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
-        <div class="tuote-pisteet">${tuote.pisteet[window.kieli]}</div>
-        <div class="tuote-kuvaus">${tuote.tuotekuvaus[window.kieli]}</div>
+        <div class="tuote-hinta">${tuote.hinta}</div>
+        <br>
+        <div class="tuote-saatavuus">${tuote.tuotteenSaatavuus[window.kieli]}</div>
       </a>  
       `
     },
@@ -32,8 +33,19 @@ const TuoteSivu = (tuote) => {
         </section>
         <div id="ostos-sivu" class="active"></div>
         <div id="popup" class="active">
-          <h1>${tuote.nimi[window.kieli]}</h1>
-          <a href="#/">Sulje</a>
+          <div class="popup-section1">
+            <h1 class="class-tuote-otsikko-popup">${tuote.nimi[window.kieli]}</h1>
+            <img class="tuote-kuva-popup" src="${tuote.kuvanNimi}">
+          </div>
+          <div class="popup-section2">
+            <div class="tuote-kuvaus-popup">${tuote.tuotekuvaus[window.kieli]}</div>
+            <div class="tuote-hinta-popup">${tuote.hinta}</div>
+            <div>
+              <a class="soita-popup" href="tel:040-5245210"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero">Soita tästä</a>
+              <a class="s-posti-popup" href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti">Lähetä S-postia</a>  
+            </div>
+          </div>
+          <a class="sulje-btn" href="#/">Sulje</a>
         </div>
         `;
     }
@@ -111,11 +123,11 @@ const YrityksestäSivu = {
             </div>
             <div class="kaikki-iconsit-kaikki-muut">
               <div class="iconi-muu puhelin_y-tunnus">
-                <a href="tel:000000000"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"><br>+00000000</a>
+                <a href="tel:040-5245210"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"><br>+358 40-5245210</a>
                 <p class="y-tunnus">${window.tekstit[window.kieli].yritystunnus} 2239554-1</p>
               </div>
               <div class="iconi-muu s-posti&osite">
-                <a href="mailto:john@example.com"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"><br>esimerkki@erno.fi</a>
+                <a href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"><br>info@restaturku.fi</a>
                 <p class="Osoite">Ahertajantie 5, 15880 HOLLOLA</p>
               </div>
             </div>
@@ -148,7 +160,6 @@ const routes = [
 
   const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
   const findComponentByPath = (path, routes) => {
-    console.log(path)
     console.log(routes.find(r => {
       console.log(r.path, path, r.path === path);
       return r.path === path}))

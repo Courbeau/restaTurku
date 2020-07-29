@@ -11,11 +11,12 @@
             "SV": "Med detta kan du gräva mark",
             "EN": "With this you can dig ground"
         },
-        "pisteet": {
-            "FI": "Pisteet: 10/10",
-            "SV": "Poäng: 10/10",
-            "EN": "Points: 10/10"   
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
         },
+        "hinta": "74,99€",
         "kuvanNimi":"pictures/lapio.png"
 
     },
@@ -32,11 +33,12 @@
             "SV": "asdasfafa adsafagdasgds gas",
             "EN": "With this you fight enemies"
         },
-        "pisteet": {
-            "FI": "Pisteet: 9/10",
-            "SV": "Poäng: 9/10",
-            "EN": "Points: 9/10"   
+        "tuotteenSaatavuus": {
+            "FI": "Loppuunmyyty",
+            "SV": "Utsåld",
+            "EN": "Sold out"
         },
+        "hinta": "54,99€",
         "kuvanNimi":"pictures/miekka.png"
     },
     {
@@ -51,11 +53,12 @@
             "SV": "jasfanksflaf adsafagdasgds gas",
             "EN": "With this you farm land"
         },
-            "pisteet": {
-            "FI": "Pisteet: 7/10",
-            "SV": "Poäng: 7/10",
-            "EN": "Points: 7/10"   
+        "tuotteenSaatavuus": {
+            "FI": "Tilattavissa",
+            "SV": "Finns att beställa",
+            "EN": "Available to order"
         },
+        "hinta": "199,99€",
         "kuvanNimi":"pictures/kuokka.png"
 
     },
@@ -71,11 +74,12 @@
             "SV": "sjasfanckacn adsafagdasgds gas",
             "EN": "With this you punch trees"
         },
-        "pisteet": {            
-            "FI": "Pisteet: 5/10",
-            "SV": "Poäng: 5/10",
-            "EN": "Points: 5/10"   
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
         },
+        "hinta": "20,99€",
         "kuvanNimi":"pictures/kirves.png"
     }
 ]
