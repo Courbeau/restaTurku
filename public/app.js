@@ -28,10 +28,6 @@ const TuoteSivu = (tuote) => {
       return `
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
-        <section class="sivutuotemenu">
-          <a class="sivu-tuoteluokka">lapiot</a>
-          <a class="sivu-tuoteluokka">tiskikoneet</a>
-        </section>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
@@ -124,7 +120,7 @@ const YrityksestäSivu = {
           <div class="yrityksesta-sivu">
             <h2 class="yrityksesta-otsikko">${window.tekstit[window.kieli].otsikko2}</h2>
             <div class="content-text">
-                <p class="text">${window.tekstit[window.kieli].tarina}</p>
+                <p class="text-osio">${window.tekstit[window.kieli].tarina}</p>
             </div>
             <div class="kaikki-iconsit-kaikki-muut">
               <div class="iconi-muu puhelin_y-tunnus">
