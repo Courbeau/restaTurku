@@ -8,7 +8,7 @@ const TuotteetSivu = {
         <div class="tuote-hinta">${tuote.hinta}</div>
         <br>
         <div class="tuote-saatavuus">${tuote.tuotteenSaatavuus[window.kieli]}</div>
-      </a>  
+      </a>
       `
     },
     render: () => {
@@ -28,6 +28,10 @@ const TuoteSivu = (tuote) => {
       return `
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
+        <section class="sivutuotemenu">
+          <a class="sivu-tuoteluokka">lapiot</a>
+          <a class="sivu-tuoteluokka">tiskikoneet</a>
+        </section>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
         </section>
@@ -35,17 +39,18 @@ const TuoteSivu = (tuote) => {
         <div id="popup" class="active">
           <div class="popup-section1">
             <h1 class="class-tuote-otsikko-popup">${tuote.nimi[window.kieli]}</h1>
-            <img class="tuote-kuva-popup" src="${tuote.kuvanNimi}">
+              <img class="tuote-kuva-popup" src="${tuote.kuvanNimi}">
           </div>
           <div class="popup-section2">
             <div class="tuote-kuvaus-popup">${tuote.tuotekuvaus[window.kieli]}</div>
-            <div class="tuote-hinta-popup">${tuote.hinta}</div>
-            <div>
-              <a class="soita-popup" href="tel:040-5245210"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero">Soita tästä</a>
-              <a class="s-posti-popup" href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti">Lähetä S-postia</a>  
+            <div class="s-s-popups">
+              <a class="soita-popup" href="tel:040-5245210"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a>
+              <a class="s-posti-popup" href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"> </a>  
             </div>
+            <div class="tuote-hinta-popup">${tuote.hinta}</div>
+
           </div>
-          <a class="sulje-btn" href="#/">Sulje</a>
+          <a class="sulje-btn" href="#/">x</a>
         </div>
         `;
     }
