@@ -156,7 +156,7 @@ const TuoteSivu = (tuote) => {
             <div class="tuote-hinta-popup">${tuote.hinta}</div>
 
           </div>
-          <a class="sulje-btn" href="#/">x</a>
+          <a class="sulje-btn" href="#/">&#10005;</a>
         </div>
         `;
     }

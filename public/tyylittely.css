@@ -1,11 +1,7 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(fonts/Roboto-Medium.ttf);
-    }
-@font-face {
-    font-family: "Rowdies";
-    src: url(fonts/Rowdies-Regular.ttf);
+* {
+    font-family: system-ui;
 }
+
 /*yrityksestä sivun layout*/
 
 @media only screen and (min-width: 800px) {
@@ -29,7 +25,6 @@
         text-align: center;
         line-height: 100vh; 
         color: snow;
-        font-family: "Rowdies";
         font-size: 1.35em;
     }
     
@@ -56,7 +51,6 @@
         text-align: center;
         line-height: 40vh; 
         color: snow;
-        font-family: "Rowdies";
         font-size: 1.35em;
     }
 }
@@ -74,13 +68,12 @@
     min-width: 45%;
     padding-top: 10px;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 6px;
     text-align: center;
     padding-bottom: 0;
     color: #333;
     font-size: 1.4em;
     font-weight: 400;
-    font-family: "Roboto";
 
 }
 
@@ -94,7 +87,6 @@
     font-size: 3em;
     text-align: center;
     font-weight: bold;
-    font-family: "Rowdies";
     color: #111;
 }
 /**/
@@ -102,7 +94,6 @@
 header {
     position: fixed;
     width: 100%;
-    height: 20%;
     top: 0;
     left: 0;
 }
@@ -124,8 +115,7 @@ header {
     padding: 0.5em;
     color: cornsilk;
     text-decoration: none;
-    font-weight: bolder;
-    font-family: 'Lucida Sans';
+    font-weight: lighter;
 }
 
 .kieli-valikko {
@@ -137,14 +127,10 @@ header {
     padding: 0.65em;
     color: cornsilk;
     text-decoration: none;
-    font-weight: bolder;
-    font-family: 'Lucida Sans';
+    font-weight: lighter;
     font-size: 0.85em;
 }
 
-.kieli-valikko-selecti option {
-    font-family: "Roboto";
-}
 
 .kieli-valikko-selecti:hover {
     background-color: #374785;
@@ -165,12 +151,11 @@ header {
 .sivun-nimi {
     margin-top: 10px;
     padding-bottom: 10px;
-    font-family: "Roboto";
     color: cornsilk;
 }
 
 .current {
-    background-color: #A8D0E6;
+    background-color: #374785;
 }
 
 /*Ylävalikko osuus*/
@@ -189,8 +174,7 @@ body {
     margin-top: 1em;
     font-size: 4.5em;
     text-align: center;
-    font-weight: bold;
-    font-family: "Roboto";
+    font-weight: lighter;
     color: #111;
 
 }
@@ -199,15 +183,13 @@ body {
     margin-top: 1em;
     font-size: 2.5em;
     text-align: center;
-    font-weight: bold;
-    font-family: "Roboto";
+    font-weight: lighter;
     color: #111;
 }
 
 .text-osio {
     text-align: center;
     font-size: 1em;
-    font-family: "Roboto";
     padding: 15px;
     color: #444;
 }
@@ -259,14 +241,12 @@ body {
 .sulje-btn {
     align-self: flex-end;
     text-decoration: none;
-    border-radius: 2.5px;
+    border-radius: 6px;
     background-color: #24305E;
     color: #fff;
     padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
-    font-family: "Roboto";
-    font-weight: 900;
     font-size: 2em;
 }
 
@@ -284,7 +264,7 @@ body {
     margin: 30px;
     margin-top: 0;
     background-color: #374785;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 20px;
 }
 
@@ -299,8 +279,7 @@ form {
     color: snow;
     text-align: center;
     font-size: 2em;
-    font-family: "Roboto";
-    font-weight: initial;
+    font-weight: lighter;
 }
 
 .nimi-mail-box{
@@ -312,7 +291,7 @@ input[type=text] {
     width: 50%;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 6px;
     border: solid 2px #A8D0E6;
     outline: none;
     background-color: #374785;
@@ -329,7 +308,7 @@ input[type=email] {
     width: 50%;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 6px;
     border: solid 2px #A8D0E6;
     outline: none;
     background-color: #374785;
@@ -351,7 +330,7 @@ input[type=submit] {
     color: snow;
     text-align: center;
     margin-top: 2%;
-    border-radius: 10px;
+    border-radius: 6px;
     border: none;
     outline: none;
     color: snow;
@@ -364,7 +343,6 @@ input[type=submit] {
 }
 
 label {
-    font-family: "Roboto";
     display: block;
     text-align: center;
     padding-top: 10px;
@@ -380,7 +358,7 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 6px;
     border: solid 2px #A8D0E6;
     outline: none;
     background-color: #374785;
@@ -457,8 +435,7 @@ textarea {
       padding: 10px;
       margin: 45px;
       font-size: 6vw;
-      font-family: monospace, "Rowdies";
-      font-weight: initial;
+      font-weight: lighter;
       background-color: red;
       color: #f2f2f2;
   }
@@ -482,8 +459,8 @@ textarea {
     text-align: center; 
     display: inline-block;
     background-color: white;
-    border: 5px solid #777;
-    border-radius: 5%;
+    border: 1.2px solid #777;
+    border-radius: 6px;
     width: 176px;
     height: 240px;
     padding: 20px;
@@ -493,10 +470,10 @@ textarea {
 }
 
 .tuote-nimi {
+    margin-top: 15px;
     color: #333;
-    font-weight: 700;
+    font-weight: lighter;
     font-size: 1.9em;
-    font-family: "Roboto";
 }
 
 .tuote-kuva {
@@ -508,15 +485,13 @@ textarea {
 .tuote-hinta {
     color: #555;
     font-weight: bold;
-    font-family: "Roboto";
 }
 
 .tuote-saatavuus {
-    font-family: "Roboto";
     padding: 4px;
     background-color: #24305E;
     color: snow;
-    font-weight: initial;
+    font-weight: lighter;
     font-size: 1.25em;
 }
 /*Tuote tyylittelyt loppu*/
@@ -533,8 +508,7 @@ textarea {
 }
 
 .class-tuote-otsikko-popup {
-    font-weight: bolder;
-    font-family: "Rowdies";
+    font-weight: lighter;
     text-align: center;
 }
 
@@ -547,7 +521,6 @@ textarea {
     text-align: center;
     font-size: 1.25em;
     font-size: initial;
-    font-family: "Roboto";
     margin-bottom: 10px;    
 }
 
@@ -560,7 +533,6 @@ textarea {
     color: snow;
     font-size: 1.5em;
     font-weight: bolder;
-    font-family: "Roboto";
 }
 .s-s-popups {
     text-align: center;
@@ -569,14 +541,12 @@ textarea {
     font-size: 1em;
     font-size: bolder;
     text-decoration: none;
-    font-family: "Roboto";
 }
 
 .s-posti-popup {
     font-size: 1em;
     font-size: bolder;
     text-decoration: none;
-    font-family: "Roboto";
 }
 
 /*ptl loppu*/
