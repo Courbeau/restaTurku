@@ -396,6 +396,19 @@ textarea {
 }
 
 /*Formi hommien loppu*/
+.img-magnifier-container {
+    position: relative;
+  }
+  
+  .img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+  }
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -421,7 +434,6 @@ textarea {
     
   /* The dots/bullets/indicators */
   .dot {
-    cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -431,9 +443,6 @@ textarea {
     transition: background-color 0.6s ease;
   }
   
-  .active, .dot:hover {
-    background-color: #717171;
-  }
   
   /* Fading animation */
   .fade {
