@@ -449,7 +449,7 @@ textarea {
       padding: 10px;
       margin: 45px;
       font-size: 6vw;
-      font-family: "Rowdies";
+      font-family: monospace, "Rowdies";
       font-weight: initial;
       background-color: red;
       color: #f2f2f2;

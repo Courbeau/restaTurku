@@ -1,5 +1,21 @@
 // Components
 const TuotteetSivu = {
+    karuselliRullaa: () => {
+      var slideIndex = 0;
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (slides.length === 0) return;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3500);
+      }
+      showSlides();  
+    },
     renderTuote: (tuote) => {
       return `
       <a href="#/tuotteet/${tuote.id}" class="tuote-container">
@@ -11,9 +27,38 @@ const TuotteetSivu = {
       </a>
       `
     },
+    renderKaruselli: (slideIndex) => {
+      return `<!-- Slideshow container -->
+      <div class="slideshow-container">
+  
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade${slideIndex === 0 ? ' selected' : ''}">
+          <h3>Houkutteleva tieto 1</h3>
+          </div>
+      
+          <div class="mySlides fade${slideIndex === 1 ? ' selected' : ''}">
+          <h3>Houkutteleva tieto 2</h3>
+          </div>
+      
+          <div class="mySlides fade${slideIndex === 2 ? ' selected' : ''}">
+          <h3>Houkutteleva tieto 3</h3>
+          </div>
+      
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>`
+    },
     render: () => {
+        setTimeout(TuotteetSivu.karuselliRullaa, 0);
         return `
         ${Yläpalkki.render("tuotteet")}
+        ${TuotteetSivu.renderKaruselli(TuotteetSivu.slideIndex)}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <section class="kaikki-tuotteet-container">
           ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
