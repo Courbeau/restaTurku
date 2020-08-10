@@ -147,11 +147,11 @@ const TuoteSivu = (tuote) => {
           </div>
           </div>
           <div class="popup-section2">
-            <div class="tuote-kuvaus-popup">${tuote.tuotekuvaus[window.kieli]}</div>
             <div class="s-s-popups">
               <a class="soita-popup" href="tel:040-5245210"><img class="icon puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a>
               <a class="s-posti-popup" href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"> </a>  
             </div>
+            <div class="tuote-kuvaus-popup">${tuote.tuotekuvaus[window.kieli]}</div>
             <div class="tuote-hinta-popup">${tuote.hinta}</div>
 
           </div>
@@ -254,9 +254,11 @@ const YrityksestäSivu = {
     render: () => {
       return `
         <section>
-          <h1 style="color:red">Error</h1>
-          <p style="color:red">This is not a webpage that exsists on our website!!!</p>
-        </section>
+        ${Yläpalkki.render("")}
+          <h1 class="tuotteet-otsikko" style="color:red">Error 404</h1>
+          <p style="color:red; text-align:center; font-weight: bold;">This is not a webpage that exsists on our website!!!/Meillä ei ole tämän nimistä nettisivustoa!!!</p>
+          <div style="font-size:10em; text-align:center">&#129298;</div>
+        ´</section>
       `;
     }
   }
