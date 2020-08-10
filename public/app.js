@@ -31,17 +31,16 @@ const TuotteetSivu = {
       return `<!-- Slideshow container -->
       <div class="slideshow-container">
   
-          <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-          <h3>Houkutteleva tieto 1</h3>
+          <h3>${window.tekstit[window.kieli].carouselHoukutus1}</h3>
           </div>
       
           <div class="mySlides fade">
-          <h3>Houkutteleva tieto 2</h3>
+          <h3>${window.tekstit[window.kieli].carouselHoukutus2}</h3>
           </div>
       
           <div class="mySlides fade">
-          <h3>Houkutteleva tieto 3</h3>
+          <h3>${window.tekstit[window.kieli].carouselHoukutus3}</h3>
           </div>
       
       </div>
@@ -262,6 +261,7 @@ const YrityksestäSivu = {
     }
   }
 
+
   // Routes 
 const routes = [
     { path: '/', component: TuotteetSivu, },
@@ -282,12 +282,11 @@ const routes = [
   };
 
   const router = () => {
-    //  Find the component based on the current path  
     const path = parseLocation();
     const { component = ErrorComponent } = findComponentByPath(path, routes) || {}
-    // TODO: Render the component in the "app" placeholder
     document.getElementById('app').innerHTML = component.render();
   };
 
+  
   window.addEventListener('hashchange', router);
   window.addEventListener('load', router);  
