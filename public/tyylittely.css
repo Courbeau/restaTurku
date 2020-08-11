@@ -248,6 +248,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 2em;
+    margin-left: 10px;
 }
 
 .sulje-btn:hover {
@@ -436,7 +437,7 @@ textarea {
       margin: 45px;
       margin-bottom: 10px;
       font-size: 6vw;
-      font-weight: lighter;
+      font-weight: 400;
       color: #374785;
       background-color: rgba(0, 0, 0, 0.1);
   }
@@ -490,7 +491,7 @@ textarea {
 
 .tuote-saatavuus {
     padding: 4px;
-    background-color: #24305E;
+    background-color: #ce2029;
     color: snow;
     font-weight: lighter;
     font-size: 1.25em;
@@ -509,7 +510,7 @@ textarea {
 }
 
 .class-tuote-otsikko-popup {
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -533,7 +534,7 @@ textarea {
     display: inline-block;
     width: auto;
     padding: 10px;
-    background-color: red;
+    background-color: #ce2029;
     color: snow;
     font-size: 1.5em;
     font-weight: bolder;
@@ -543,13 +544,13 @@ textarea {
     padding-bottom: 10px;
 }
 .soita-popup {
-    padding-right: 10px;
+    padding-right: 5px;
     font-size: 1em;
     text-decoration: none;
 }
 
 .s-posti-popup {
-    padding-left: 10px;
+    padding-left: 5px;
     font-size: 1em;
     text-decoration: none;
 }
