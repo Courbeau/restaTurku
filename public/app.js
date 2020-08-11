@@ -84,6 +84,7 @@ glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + 
 bw = 3;
 w = glass.offsetWidth / 2;
 h = glass.offsetHeight / 2;
+glass.style.visibility = "hidden";
 
 /* Execute a function when someone moves the magnifier glass over the image: */
 glass.addEventListener("mousemove", moveMagnifier);
@@ -100,11 +101,24 @@ e.preventDefault();
 pos = getCursorPos(e);
 x = pos.x;
 y = pos.y;
+glass.style.visibility = "visible";
 /* Prevent the magnifier glass from being positioned outside the image: */
-if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-if (x < w / zoom) {x = w / zoom;}
-if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-if (y < h / zoom) {y = h / zoom;}
+if (x > img.width - (w / zoom)) {
+  x = img.width - (w / zoom);
+  glass.style.visibility = "hidden";
+} 
+if (x < w / zoom) {
+  x = w / zoom;
+  glass.style.visibility = "hidden";
+} 
+if (y > img.height - (h / zoom)) {
+  y = img.height - (h / zoom);
+  glass.style.visibility = "hidden";
+} 
+if (y < h / zoom) {
+  y = h / zoom;
+  glass.style.visibility = "hidden";
+} 
 /* Set the position of the magnifier glass: */
 glass.style.left = (x - w + 45) + "px";
 glass.style.top = (y - h + 85) + "px";
