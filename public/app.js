@@ -155,7 +155,7 @@ const TuoteSivu = (tuote) => {
         <div id="ostos-sivu" class="active"></div>
         <div id="popup" class="active">
           <div class="popup-section1">
-            <h1 class="class-tuote-otsikko-popup">${tuote.nimi[window.kieli]}</h1>
+          <h1 class="class-tuote-otsikko-popup">${tuote.nimi[window.kieli]}</h1>
           <div class="img-magnifier-content">
             <img id="tuotteen-suurennuslasi" class="tuote-kuva-popup" src="${tuote.kuvanNimi}">
           </div>
@@ -197,7 +197,6 @@ const MessageForm = {
           </div>    
         </form>
       </div>
-      <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
       `
     }
 }
