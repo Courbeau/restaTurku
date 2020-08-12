@@ -461,20 +461,35 @@ textarea {
 }
 
 .tuoteluokat-holder a {
+    border: 1.2px solid black;
+    border-radius: 6px;
+    align-content: center;
+    width: 183px;
+    height: 200px;
     margin: 10px;
-    align-items: center;
-    display: flex;
+    display: inline-block;
     padding: 10px;
-    width: 100px;
-    height: 30px;
-    background-color: #24305E;
+    background-color: snow;
     text-decoration: none;
     color: snow;
 }
 
+.tuoteluokat-holder a  img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.tuoteluokat-holder a  p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: lighter;
+    text-align: center;
+}
 
 .tuoteluokat-holder a:hover {
-    background-color: #374785;
+    background-color: #e3e3e3;
 }
 
 
