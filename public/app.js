@@ -1,137 +1,51 @@
 // Components
-const TuoteluokatSivu = {
-  karuselliRullaa: () => {
-    var slideIndex = 0;
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (slides.length === 0) return;
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 3500);
-    }
-    showSlides();  
-  },
-  renderKaruselli: (slideIndex) => {
-    return `<!-- Slideshow container -->
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-        <h3>${window.tekstit[window.kieli].carouselHoukutus1}</h3>
-        </div>
-    
-        <div class="mySlides fade">
-        <h3>${window.tekstit[window.kieli].carouselHoukutus2}</h3>
-        </div>
-    
-        <div class="mySlides fade">
-        <h3>${window.tekstit[window.kieli].carouselHoukutus3}</h3>
-        </div>
-    
-    </div>
-    <br>
-    
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>`
-  },
+const TuoteluokatSivu = {
   render: () => {
       setTimeout(TuotteetSivu.karuselliRullaa, 0);
       return `
       ${Yläpalkki.render("tuotteet")}
       <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
       <div class="tuoteluokat-holder">
-        <a href="#/tuotteetsivu"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka1}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka2}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka3}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka4}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka5}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka6}</p></a>
-        <a href="#/tuotteetsivu"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka7}</p></a>
+        <a href="#/tuotteetsivu/1"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka1}</p></a>
+        <a href="#/tuotteetsivu/2"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka2}</p></a>
+        <a href="#/tuotteetsivu/3"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka3}</p></a>
+        <a href="#/tuotteetsivu/4"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka4}</p></a>
+        <a href="#/tuotteetsivu/5"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka5}</p></a>
+        <a href="#/tuotteetsivu/6"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka6}</p></a>
+        <a href="#/tuotteetsivu/7"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka7}</p></a>
       </div>
-      ${TuotteetSivu.renderKaruselli(TuotteetSivu.slideIndex)}
-      <br>
       `;
   }
 } 
 
 
+const renderTuote = (tuote) => {
+  return `
+  <a href="#/tuotteet/${tuote.id}" class="tuote-container">
+    <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
+    <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
+    <div class="tuote-hinta">${tuote.hinta}</div>
+    <br>
+    <div class="tuote-saatavuus">${tuote.tuotteenSaatavuus[window.kieli]}</div>
+  </a>
+  `
+}
 
-
-const TuotteetSivu = {
-    karuselliRullaa: () => {
-      var slideIndex = 0;
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        if (slides.length === 0) return;
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 3500);
-      }
-      showSlides();  
-    },
-    renderTuote: (tuote) => {
-      return `
-      <a href="#/tuotteet/${tuote.id}" class="tuote-container">
-        <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
-        <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
-        <div class="tuote-hinta">${tuote.hinta}</div>
-        <br>
-        <div class="tuote-saatavuus">${tuote.tuotteenSaatavuus[window.kieli]}</div>
-      </a>
-      `
-    },
-    renderKaruselli: (slideIndex) => {
-      return `<!-- Slideshow container -->
-      <div class="slideshow-container">
-  
-          <div class="mySlides fade">
-          <h3>${window.tekstit[window.kieli].carouselHoukutus1}</h3>
-          </div>
-      
-          <div class="mySlides fade">
-          <h3>${window.tekstit[window.kieli].carouselHoukutus2}</h3>
-          </div>
-      
-          <div class="mySlides fade">
-          <h3>${window.tekstit[window.kieli].carouselHoukutus3}</h3>
-          </div>
-      
-      </div>
-      <br>
-      
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-      </div>`
-    },
+const TuotteetSivu = (tuoteLuokka) => {
+  return {
     render: () => {
-        setTimeout(TuotteetSivu.karuselliRullaa, 0);
+        const tuotteet = (window.tuotteet ?? []).filter(tuote => tuote.luokka === tuoteLuokka);
+        setTimeout(this.karuselliRullaa, 0);
         return `
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <section class="kaikki-tuotteet-container">
-          ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
+          ${tuotteet.map(renderTuote).join('')}
         </section>
-        ${TuotteetSivu.renderKaruselli(TuotteetSivu.slideIndex)}
-        <br>
         `;
     }
-  } 
+  }};
 
   function magnify(imgID, zoom) {
 var img, glass, w, h, bw;
@@ -217,7 +131,7 @@ const TuoteSivu = (tuote) => {
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <section class="kaikki-tuotteet-container">
-          ${window.tuotteet?.map(TuotteetSivu.renderTuote).join('')}
+          ${window.tuotteet?.map(renderTuote).join('')}
         </section>
         <div id="ostos-sivu" class="active"></div>
         <div id="popup" class="active">
@@ -347,7 +261,15 @@ const YrityksestäSivu = {
   // Routes 
 const routes = [
     { path: "/", component: TuoteluokatSivu, },
-    { path: '/tuotteetsivu', component: TuotteetSivu, },
+    { path: '/tuotteetsivu/1', component: TuotteetSivu("astianpesu"), },
+    { path: '/tuotteetsivu/2', component: TuotteetSivu("kahvi"), },
+    { path: '/tuotteetsivu/3', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/4', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/5', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/6', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/7', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/8', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/9', component: TuotteetSivu(), },
     { path: '/yhteystiedot', component: YrityksestäSivu, },
   ];
 

@@ -1,6 +1,7 @@
 [
     {
         "id": "lapio",
+        "luokka": "astianpesu",
         "nimi": {
             "FI": "Lapio",
             "SV": "Skyffel",
@@ -23,6 +24,7 @@
     {
     
         "id": "miekka",
+        "luokka": "kahvi",
         "nimi": {
             "FI": "Miekka",
             "SV": "Skyffel",
@@ -43,6 +45,7 @@
     },
     {
         "id": "kuokka",
+        "luokka": "kahvi",
         "nimi": {
             "FI": "Kuokka",
             "SV": "Skyffel",
