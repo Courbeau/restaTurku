@@ -1,7 +1,7 @@
 [
     {
         "id": "lapio",
-        "luokka": "astianpesu",
+        "luokka": "astianpesu&esikäsittely",
         "nimi": {
             "FI": "Lapio",
             "SV": "Skyffel",
@@ -24,7 +24,7 @@
     {
     
         "id": "miekka",
-        "luokka": "kahvi",
+        "luokka": "kahvi-&baarilaitteet",
         "nimi": {
             "FI": "Miekka",
             "SV": "Skyffel",
@@ -45,7 +45,7 @@
     },
     {
         "id": "kuokka",
-        "luokka": "kahvi",
+        "luokka": "kahvi-&baarilaitteet",
         "nimi": {
             "FI": "Kuokka",
             "SV": "Skyffel",
@@ -67,6 +67,7 @@
     },
     {   
         "id": "kirves",
+        "luokka": "astianpesu&esikäsittely",
         "nimi": {            
             "FI": "Kirves",
             "SV": "Skyffel",

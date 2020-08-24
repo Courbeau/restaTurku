@@ -36,7 +36,6 @@ const TuotteetSivu = (tuoteLuokka) => {
   return {
     render: () => {
         const tuotteet = (window.tuotteet ?? []).filter(tuote => tuote.luokka === tuoteLuokka);
-        setTimeout(this.karuselliRullaa, 0);
         return `
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
@@ -150,7 +149,7 @@ const TuoteSivu = (tuote) => {
             <div class="tuote-hinta-popup">${tuote.hinta}</div>
 
           </div>
-          <a class="sulje-btn" href="#/tuotteetsivu ">&#10005;</a>
+          <a class="sulje-btn" href="#/">&#10005;</a>
         </div>
         `;
     }
@@ -261,15 +260,13 @@ const YrityksestäSivu = {
   // Routes 
 const routes = [
     { path: "/", component: TuoteluokatSivu, },
-    { path: '/tuotteetsivu/1', component: TuotteetSivu("astianpesu"), },
-    { path: '/tuotteetsivu/2', component: TuotteetSivu("kahvi"), },
-    { path: '/tuotteetsivu/3', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/4', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/5', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/6', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/7', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/8', component: TuotteetSivu(), },
-    { path: '/tuotteetsivu/9', component: TuotteetSivu(), },
+    { path: '/tuotteetsivu/1', component: TuotteetSivu("astianpesu&esikäsittely"), },
+    { path: '/tuotteetsivu/2', component: TuotteetSivu("kahvi-&baarilaitteet"), },
+    { path: '/tuotteetsivu/3', component: TuotteetSivu("kylmäsäilytys"), },
+    { path: '/tuotteetsivu/4', component: TuotteetSivu("uunit&muu_keittiö"), },
+    { path: '/tuotteetsivu/5', component: TuotteetSivu("tarjoilu&muut_tarvikket"), },
+    { path: '/tuotteetsivu/6', component: TuotteetSivu("pizza_välineet"), },
+    { path: '/tuotteetsivu/7', component: TuotteetSivu("rst-kalusteet"), },
     { path: '/yhteystiedot', component: YrityksestäSivu, },
   ];
 
