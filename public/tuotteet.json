@@ -85,5 +85,125 @@
         },
         "hinta": "20,99€",
         "kuvanNimi":"pictures/kirves.png"
+    },
+    {
+        "id": "pizzalapio1",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzalapio",
+            "SV": "Pizzalapio",
+            "EN": "Pizzalapio"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzalapiot koot 25-60cm",
+            "SV": "Pizzalapiot koot 25-60cm",
+            "EN": "Pizzalapiot koot 25-60cm"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzalapiot1.jpg"
+    },
+    {
+        "id": "pizzalapio2",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzalapio",
+            "SV": "Pizzalapio",
+            "EN": "Pizzalapio"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzalapiot koot 25-60cm",
+            "SV": "Pizzalapiot koot 25-60cm",
+            "EN": "Pizzalapiot koot 25-60cm"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzalapiot2.jpg"
+    },
+    {
+        "id": "pizzalapio3",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzalapio",
+            "SV": "Pizzalapio",
+            "EN": "Pizzalapio"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzalapiot koot 25-60cm",
+            "SV": "Pizzalapiot koot 25-60cm",
+            "EN": "Pizzalapiot koot 25-60cm"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzalapiot3.jpg"
+    },
+    {
+        "id": "pizzalapio4",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzalapio",
+            "SV": "Pizzalapio",
+            "EN": "Pizzalapio"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzalapiot koot 25-60cm",
+            "SV": "Pizzalapiot koot 25-60cm",
+            "EN": "Pizzalapiot koot 25-60cm"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzalapiot4.jpg"
+    },
+    {
+        "id": "pizzalautaset",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzalautaset",
+            "SV": "Pizzalautaset",
+            "EN": "Pizzalautaset"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
+            "SV": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
+            "EN": "Pizzalautaset posliinia 0/32cm, ja 35 cm"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzalautaset.jpg"
+    },
+    {
+        "id": "pizzaleikkuualusta",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzaleikkuualusta",
+            "SV": "Pizzaleikkuualusta",
+            "EN": "Pizzaleikkuualusta"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
+            "SV": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
+            "EN": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia."
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzaleikkuualustat.jpg"
     }
 ]

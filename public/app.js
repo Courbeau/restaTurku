@@ -12,7 +12,7 @@ const TuoteluokatSivu = {
         <a href="#/tuotteetsivu/3"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka3}</p></a>
         <a href="#/tuotteetsivu/4"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka4}</p></a>
         <a href="#/tuotteetsivu/5"><img src="pictures/lapio.png"><p>${window.tekstit[window.kieli].tuoteluokka5}</p></a>
-        <a href="#/tuotteetsivu/6"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka6}</p></a>
+        <a href="#/tuotteetsivu/6"><img src="pictures/pizzalapiot1.jpg"><br><p>${window.tekstit[window.kieli].tuoteluokka6}</p></a>
         <a href="#/tuotteetsivu/7"><img src="pictures/lapio.png"><br><p>${window.tekstit[window.kieli].tuoteluokka7}</p></a>
       </div>
       `;
@@ -25,9 +25,7 @@ const renderTuote = (tuote) => {
   <a href="#/tuotteet/${tuote.id}" class="tuote-container">
     <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
     <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
-    <div class="tuote-hinta">${tuote.hinta}</div>
     <br>
-    <div class="tuote-saatavuus">${tuote.tuotteenSaatavuus[window.kieli]}</div>
   </a>
   `
 }
@@ -129,9 +127,6 @@ const TuoteSivu = (tuote) => {
       return `
         ${Yläpalkki.render("tuotteet")}
         <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
-        <section class="kaikki-tuotteet-container">
-          ${window.tuotteet?.map(renderTuote).join('')}
-        </section>
         <div id="ostos-sivu" class="active"></div>
         <div id="popup" class="active">
           <div class="popup-section1">
@@ -146,8 +141,7 @@ const TuoteSivu = (tuote) => {
               <a class="s-posti-popup" href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"> </a>  
             </div>
             <div class="tuote-kuvaus-popup">${tuote.tuotekuvaus[window.kieli]}</div>
-            <div class="tuote-hinta-popup">${tuote.hinta}</div>
-
+            
           </div>
           <a class="sulje-btn" href="#/">&#10005;</a>
         </div>
@@ -259,14 +253,7 @@ const YrityksestäSivu = {
 
   // Routes 
 const routes = [
-    { path: "/", component: TuoteluokatSivu, },
-    { path: '/tuotteetsivu/1', component: TuotteetSivu("astianpesu&esikäsittely"), },
-    { path: '/tuotteetsivu/2', component: TuotteetSivu("kahvi-&baarilaitteet"), },
-    { path: '/tuotteetsivu/3', component: TuotteetSivu("kylmäsäilytys"), },
-    { path: '/tuotteetsivu/4', component: TuotteetSivu("uunit&muu_keittiö"), },
-    { path: '/tuotteetsivu/5', component: TuotteetSivu("tarjoilu&muut_tarvikket"), },
-    { path: '/tuotteetsivu/6', component: TuotteetSivu("pizza_välineet"), },
-    { path: '/tuotteetsivu/7', component: TuotteetSivu("rst-kalusteet"), },
+    { path: '/', component: TuotteetSivu("pizza_välineet"), },
     { path: '/yhteystiedot', component: YrityksestäSivu, },
   ];
 
