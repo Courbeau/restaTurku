@@ -205,5 +205,65 @@
             "EN": "Available"
         },
         "kuvanNimi":"pictures/pizzaleikkuualustat.jpg"
+    },
+    {
+        "id": "pizzakassi",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzankuljetuskassi",
+            "SV": "Pizzankuljetuskassi",
+            "EN": "Pizzankuljetuskassi"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "SV": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "EN": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen."
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzakassi350.jpg"
+    },
+    {
+        "id": "pizzauuniharja",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
+        },
+        "tuotekuvaus": {
+            "FI": "Pizzauuniharja, pehmeä/jauho.",
+            "SV": "Pizzauuniharja, pehmeä/jauho.",
+            "EN": "Pizzauuniharja, pehmeä/jauho."
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/pizzauuniharja.jpg"
+    },
+    {
+        "id": "terasharja",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
+        },
+        "tuotekuvaus": {
+            "FI": "Teräsharja metalliskraballa.",
+            "SV": "Teräsharja metalliskraballa.",
+            "EN": "Teräsharja metalliskraballa."
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvanNimi":"pictures/terasharja.jpg"
     }
 ]
