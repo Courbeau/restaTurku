@@ -225,7 +225,9 @@ const YrityksestäSivu = {
               </div>
               <div class="iconi-muu s-posti&osite">
                 <a href="mailto:info@restaturku.fi"><img class="icon s-posti-icon" src="pictures/mail.png" alt="s-posti"><br>info@restaturku.fi</a>
-                <p class="Osoite">Ahertajantie 5, 15880 HOLLOLA</p>
+                <a href="https://maps.google.com/?q=Ahertajantie 5, 15880 HOLLOLA&t=m" target="_blank">
+                <address class="Osoite">Ahertajantie 5, 15880 HOLLOLA</address>
+                </a>
               </div>
             </div>
             <h1 class="company-name">Resta Turku OY</h1>

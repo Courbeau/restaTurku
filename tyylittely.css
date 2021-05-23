@@ -2,6 +2,10 @@
     font-family: system-ui;
 }
 
+address {
+    margin: 1.5rem;
+}
+
 /*yrityksestä sivun layout*/
 
 @media only screen and (min-width: 800px) {
