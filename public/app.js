@@ -155,6 +155,8 @@ const Yläpalkki = {
             <nav class="menu">
                 <li><a class="site-link ${sivu === "tuotteet" ? "current" : ""}" href="#/">${window.tekstit[window.kieli].sitelink1}</a></li>
                 <li><a class="site-link ${sivu === "yrityksesta" ? "current" : ""}" href="#/yhteystiedot">${window.tekstit[window.kieli].sitelink2}</a></li>
+                <li><a class="site-link" href="tel:040-5245210"><img title="Soita" class="icon-navbar puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a></li>
+                <li><a class="site-link" href="mailto:info@restaturku.fi"><img title="Lähetä sähköposti" class="icon-navbar s-posti-icon" src="pictures/mail.png" alt="s-posti"> </a></li>
             </nav>
         </div>
         </header>
