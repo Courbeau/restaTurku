@@ -118,6 +118,7 @@ header {
 .header-container {
     background-color: #24305E;
     text-align: center;
+    box-shadow: 0px 3px 3px #151931;
 }
 
 .menu {
@@ -453,7 +454,7 @@ textarea {
 /*Tuote tyylittelyt*/
 .kaikki-tuotteet-container {
     text-align: center;
-    margin-top: 1.5rem;
+    padding-top: 2.5rem;
     background-color: #374785;
 }
 
@@ -486,8 +487,11 @@ textarea {
 }
 
 .tuote-kuva {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
     height: 420px;
     flex: none;
+    box-shadow: 3px 3px 3px #151931;
 }
 
 .tuote-kuvaus {
