@@ -100,6 +100,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .upper-navbar li {
@@ -444,30 +445,26 @@ textarea {
 
 .tuote-container {
     cursor: pointer;
+    position: relative;
     text-align: center; 
     display: inline-block;
     background-color: white;
-    border: 1.2px solid #777;
-    border-radius: 6px;
-    width: 240px;
-    height: 240px;
-    padding: 20px;
     margin: 20px;
     text-decoration: none;
-    padding-bottom: 50px;
 }
 
 .tuote-nimi {
-    margin-top: 15px;
-    color: #333;
+    position: absolute;
+    margin: 1rem;
+    backdrop-filter: blur(5px);
+    color: #fff;
     font-weight: lighter;
     font-size: 1.9em;
 }
 
 .tuote-kuva {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 10px;
+    height: 320px;
+    width: 320px;
 }
 
 .tuote-hinta {
