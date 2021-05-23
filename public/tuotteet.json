@@ -8,9 +8,9 @@
             "EN": "Pizzalapio"
         },
         "tuotekuvaus": {
-            "FI": "Pizzalapiot koot 25-60cm",
-            "SV": "Pizzalapiot koot 25-60cm",
-            "EN": "Pizzalapiot koot 25-60cm"
+            "FI": "Koot 25-60cm",
+            "SV": "Koot 25-60cm",
+            "EN": "Koot 25-60cm"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
@@ -28,9 +28,9 @@
             "EN": "Pizzalautaset"
         },
         "tuotekuvaus": {
-            "FI": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
-            "SV": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
-            "EN": "Pizzalautaset posliinia 0/32cm, ja 35 cm"
+            "FI": "Posliinia 0/32cm, ja 35 cm",
+            "SV": "Posliinia 0/32cm, ja 35 cm",
+            "EN": "Posliinia 0/32cm, ja 35 cm"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
@@ -48,9 +48,9 @@
             "EN": "Pizzaleikkuualusta"
         },
         "tuotekuvaus": {
-            "FI": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
-            "SV": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
-            "EN": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia."
+            "FI": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia.",
+            "SV": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia.",
+            "EN": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia."
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
@@ -68,16 +68,16 @@
             "EN": "Pizzankuljetuskassi"
         },
         "tuotekuvaus": {
-            "FI": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
-            "SV": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
-            "EN": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen."
+            "FI": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "SV": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "EN": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen."
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvat": ["pictures/pizzakassi350.jpg"]
+        "kuvat": ["pictures/pizzakassi350.jpg", "pictures/pizzakassitboksissa.jpg"]
     },
     {
         "id": "pizzauuniharja",
@@ -88,16 +88,16 @@
             "EN": "Pizzauuniharja"
         },
         "tuotekuvaus": {
-            "FI": "Pizzauuniharja, pehmeä/jauho.",
-            "SV": "Pizzauuniharja, pehmeä/jauho.",
-            "EN": "Pizzauuniharja, pehmeä/jauho."
+            "FI": "Pehmeä/jauho",
+            "SV": "Pehmeä/jauho",
+            "EN": "Pehmeä/jauho"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvat": ["pictures/pizzauuniharja.jpg"]
+        "kuvat": ["pictures/pizzauuniharja.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
     },
     {
         "id": "terasharja",
@@ -117,6 +117,6 @@
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvat": ["pictures/terasharja.jpg"]
+        "kuvat": ["pictures/terasharja.jpg", "pictures/skraba.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
     }
 ]
