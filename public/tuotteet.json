@@ -250,9 +250,9 @@
         "id": "terasharja",
         "luokka": "pizza_välineet",
         "nimi": {
-            "FI": "Teräsharja",
-            "SV": "Teräsharja",
-            "EN": "Teräsharja"
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
         },
         "tuotekuvaus": {
             "FI": "Teräsharja metalliskraballa.",
