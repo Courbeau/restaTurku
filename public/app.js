@@ -18,12 +18,15 @@ const TuoteluokatSivu = {
   }
 } 
 
+const renderTuoteKuva = (kuva) => {
+  return `<img class="tuote-kuva" src="${kuva}"/>`
+}
 
 const renderTuote = (tuote) => {
   return `
   <a href="#/tuotteet/${tuote.id}" class="tuote-container">
     <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
-    <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
+    ${tuote.kuvat.map(kuva => renderTuoteKuva(kuva)).join("\n")}
     <br>
   </a>
   `
