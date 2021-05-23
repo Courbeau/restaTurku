@@ -5,7 +5,6 @@ const TuoteluokatSivu = {
       setTimeout(TuotteetSivu.karuselliRullaa, 0);
       return `
       ${Yläpalkki.render("tuotteet")}
-      <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
       <div class="tuoteluokat-holder">
         <a href="#/tuotteetsivu/1"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka1}</p></a>
         <a href="#/tuotteetsivu/2"><img src="pictures/kuokka.png"><p>${window.tekstit[window.kieli].tuoteluokka2}</p></a>
@@ -36,7 +35,6 @@ const TuotteetSivu = (tuoteLuokka) => {
         const tuotteet = (window.tuotteet ?? []).filter(tuote => tuote.luokka === tuoteLuokka);
         return `
         ${Yläpalkki.render("tuotteet")}
-        <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <section class="kaikki-tuotteet-container">
           ${tuotteet.map(renderTuote).join('')}
         </section>
@@ -126,7 +124,6 @@ const TuoteSivu = (tuote) => {
       setTimeout(() => {magnify("tuotteen-suurennuslasi", 3)}, 0)
       return `
         ${Yläpalkki.render("tuotteet")}
-        <h2 class="tuotteet-otsikko">${window.tekstit[window.kieli].otsikko1}</h2>
         <div id="ostos-sivu" class="active"></div>
         <div id="popup" class="active">
           <div class="popup-section1">
@@ -151,16 +148,7 @@ const TuoteSivu = (tuote) => {
 }
 
 const Yläpalkki = {
-  kieliVaihto: (event) => {
-    const selecti = window.document.getElementsByClassName('kieli-valikko-selecti')[0];
-    selecti.addEventListener('change', (event) => {
-      window.kieli = event.target.value;
-      window.localStorage.setItem('kieli', window.kieli);
-      router();
-    })
-  },
   render: (sivu) => {
-    setTimeout(Yläpalkki.kieliVaihto, 0);
     return `
     <header class="navbar upper-navbar">
         <div class="header-container">

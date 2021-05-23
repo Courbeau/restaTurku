@@ -11,6 +11,7 @@ address {
 @media only screen and (min-width: 800px) {
     .koko-yrityksesta-sivu {
         display: flex;
+        margin-top: 1.5rem;
     }
     
     .yrityksesta-kuva {
@@ -111,16 +112,14 @@ header {
     background-color: #24305E;
     text-align: center;
 }
-.menu {
-    border-bottom: 2px solid #A8D0E6;
 
-}
 .navbar a {
     display: inline-block;
     padding: 0.5em;
     color: cornsilk;
     text-decoration: none;
     font-weight: lighter;
+    font-size: 18px;
 }
 
 .kieli-valikko {
@@ -441,6 +440,7 @@ textarea {
 /*Tuote tyylittelyt*/
 .kaikki-tuotteet-container {
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .tuote-container {
