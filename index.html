@@ -1,0 +1,99 @@
+<!DOCTYPE html5>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resta Turku OY | Koti</title>
+    <link rel="stylesheet" href="tyylittely.css">
+    <script type="text/javascript" src="./app.js"></script>
+    <script>
+        window.tekstit = {
+        "FI": {
+            "otsikko1": "TUOTTEET",
+            "otsikko2": "MITEN KAIKKI ALKOI",
+            "sitelink1": "Tuotteet",
+            "sitelink2": "Yrityksestä",
+            "ekologisetTuotteet": "Meiltä 100% ekologiset tuotteet!",
+            "tarina": "Oltiin 90-luvun lopussa ja piti keksiä mitä tehtäisiin \"isona\". Pekka perusti oman yrityksen. Turussa olevat asiakkaat halusivat tiettyjä erikoistuotteita ja niin syntyivät pizzalapiot ja -harjat. Niitä kehitettiin yhdessä ja muutettiin  saadun palautteen mukaan. Mukaan tulivat tukut, jotka halusivat myydä näitä asiakkaiden haluamia pizzalapioita. Tuli aika muuttaa takaisin Lahteen ja lähemmäksi Tukkujen varastoja. Samalla tuotekehityksen kautta syntyi oivallus 100 % kierrätettävistä pizzalapioista. Nyt sarja on valmis palvelemaan asiakkaita.",
+            "yritystunnus": "Y-tunnus:",
+            "formOtsikko": "Lähetä meille viestiä",
+            "formNimi": "Nimi",
+            "formSposti": "Erno@gmail.com",
+            "formAsia": "Kirjoita viestisi tähän",
+            "formLähetäNappula": "Lähetä",
+            "carouselHoukutus1": "Yksinkertaisesti Mahtavaa",
+            "carouselHoukutus2": "Koe Laatua",
+            "carouselHoukutus3": "Paranna Elämääsi",
+            "tuoteluokka1": "Astianpesu & Esikäsittely",
+            "tuoteluokka2": "Kahvi- & Baarilaitteet",
+            "tuoteluokka3": "Kylmäsäilytys",
+            "tuoteluokka4": "Uunit & Muu Keittiö",
+            "tuoteluokka5": "Tarjoilu & Muut Tarvikkeet",
+            "tuoteluokka6": "Pizza Välineet",
+            "tuoteluokka7": "Rst- Kalusteet"
+        },
+        "SV": {
+            "otsikko1": "PRODUKTER",
+            "otsikko2": "HUR ALLT BÖRJADE",
+            "sitelink1": "Produkter",
+            "sitelink2": "Om företaget",
+            "ekologisetTuotteet": "Våra produkter är 100% ekologisk!",
+            "tarina": "Vi var i slutet av 90-talet och var tvungna att ta reda på vad vi skulle göra när vi växte till vuxna. Pekka grundade sitt eget företag. Kunder i Åbo ville ha viss specialprodukter och så föddes pizzaspade och borstar. De utvecklades tillsammans och modifierades enligt feedbacken de fick. Grossister kom med som ville sälja dessa pizzaspadar önskas av kunderna. Då var det dags att flytta tillbaka till Lahti närmare grossistlagren. Samtidigt genom produktutveckling föddes en idé 100% återvinningsbara pizzaspade. Nu är serien redo att betjäna kunder.",
+            "yritystunnus": "Företags ID:",
+            "formOtsikko": "Skicka oss ett meddelande",
+            "formNimi": "Namn",
+            "formSposti": "Felix@gmail.com",
+            "formAsia": "Skriv ditt meddelande här",
+            "formLähetäNappula": "Skicka",
+            "carouselHoukutus1": "Känn Kvaliteten",
+            "carouselHoukutus2": "Förbättra Ditt Liv",
+            "carouselHoukutus3": "Helt Enkelt Fantastiskt",
+            "tuoteluokka1": "Diskmedel och förbehandling",
+            "tuoteluokka2": "Kaffe- & Barutrustning",
+            "tuoteluokka3": "Kylförvaring",
+            "tuoteluokka4": "Ugnar & Annat Kök",
+            "tuoteluokka5": "Servering & Andra Tillbehör",
+            "tuoteluokka6": "Pizzaredskap",
+            "tuoteluokka7": "Möbler i Rostfritt Stål"
+
+        },
+        "EN": {
+            "otsikko1": "PRODUCTS",            
+            "otsikko2": "HOW IT ALL STARTED",
+            "sitelink1": "Products",
+            "sitelink2": "About the company",
+            "ekologisetTuotteet": "Our products are 100% ecological!",
+            "tarina": "We were in the late 90's and had to come up with what to do when we grow into adults. Pekka founded his own company. Customers in Turku wanted certain special products and so pizza shovels and brushes were born. They were developed together and modified according to the feedback they received. Wholesalers came along who wanted to sell these pizza shovels desired by customers. Then it was time to move back to Lahti and closer to the wholesalers warehouses. At the same time through product development, an idea was born 100% recyclable pizza shovels. Now the series is ready to serve customers.",
+            "yritystunnus": "Company ID:",
+            "formOtsikko": "Send us a message",
+            "formNimi": "Name",
+            "formSposti": "Max@gmail.com",
+            "formAsia": "Write your message here",
+            "formLähetäNappula": "Send",
+            "carouselHoukutus1": "Feel the Quality",
+            "carouselHoukutus2": "Enhance Your Life",
+            "carouselHoukutus3": "Simply Awesome",
+            "tuoteluokka1": "Dishwashing & Pretreatment",
+            "tuoteluokka2": "Coffee & Bar Equipment",
+            "tuoteluokka3": "Cold-Storage",
+            "tuoteluokka4": "Ovens & Other Kitchen",
+            "tuoteluokka5": "Serving & Other Supplies",
+            "tuoteluokka6": "Pizza Utensils",
+            "tuoteluokka7": "Stainless Steel Worktops"
+
+        }
+        };
+        window.kieli = window.localStorage.getItem('kieli') || 'FI';
+        fetch("./tuotteet.json").then(async (response) => {
+            window.tuotteet = await response.json();
+            for(const tuote of window.tuotteet) {
+                addTuoteRoute(`/tuotteet/${tuote.id}`, tuote);
+            }
+            router()
+        })
+    </script>
+</head>
+<body>  
+    <section id="app"></section>   
+</body>
+</html>

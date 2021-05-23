@@ -1,0 +1,539 @@
+* {
+    font-family: system-ui;
+}
+
+/*yrityksestä sivun layout*/
+
+@media only screen and (min-width: 800px) {
+    .koko-yrityksesta-sivu {
+        display: flex;
+    }
+    
+    .yrityksesta-kuva {
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)
+            ),
+            url(pictures/finnish-nature.jpg);
+        background-size: cover;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .ekologiset-tuotteet {
+        text-align: center;
+        line-height: 100vh; 
+        color: snow;
+        font-size: 1.35em;
+    }
+    
+    .yrityksesta-sivu {
+        max-width: 50%;
+        min-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .yrityksesta-kuva {
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.4)
+            ),
+            url(pictures/finnish-nature.jpg);
+        background-size: cover;
+        min-width: 100%;
+        max-width: 100%;
+        height: 40%;
+    }
+    .ekologiset-tuotteet {
+        text-align: center;
+        line-height: 40vh; 
+        color: snow;
+        font-size: 1.35em;
+    }
+}
+
+
+/*ysl loppu*/
+
+/*puhelin,s-posti iconit ja y-tunnus ja osoite*/
+.kaikki-iconsit-kaikki-muut {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.iconi-muu {
+    min-width: 45%;
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 6px;
+    text-align: center;
+    padding-bottom: 0;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: 400;
+
+}
+
+.icon {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.company-name {
+    margin-top: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    color: #111;
+}
+/**/
+/*Ylävalikko osuus*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.upper-navbar li {
+    padding: 0px 20px 0px 20px;
+}
+
+.header-container {
+    background-color: #24305E;
+    text-align: center;
+}
+.menu {
+    border-bottom: 2px solid #A8D0E6;
+
+}
+.navbar a {
+    display: inline-block;
+    padding: 0.5em;
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.kieli-valikko {
+    display: inline-block;    
+}
+.kieli-valikko-selecti {
+    border: none;
+    background-color: #24305E;
+    padding: 0.65em;
+    color: cornsilk;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 0.85em;
+}
+
+
+.kieli-valikko-selecti:hover {
+    background-color: #374785;
+    cursor: pointer;
+}
+
+
+
+.navbar li {
+    display: inline;
+}
+
+
+.site-link:hover {
+    background-color: #374785;
+    cursor: pointer;
+}
+.sivun-nimi {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: cornsilk;
+}
+
+.current {
+    background-color: #374785;
+}
+
+/*Ylävalikko osuus*/
+/*Vartalon alku*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E9ebee;
+}
+
+.tuotteet-otsikko {
+    margin-top: 1em;
+    font-size: 4.5em;
+    text-align: center;
+    font-weight: lighter;
+    color: #111;
+
+}
+
+.yrityksesta-otsikko {
+    margin-top: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: lighter;
+    color: #111;
+}
+
+.text-osio {
+    text-align: center;
+    font-size: 1em;
+    padding: 15px;
+    color: #444;
+}
+
+/*Vartalon loppu*/
+
+/*tuotteet blurri ja suurennus*/
+#ostos-sivu.active {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+@supports (not (backdrop-filter:none)) and (not (-webkit-backdrop-filter:none)) {
+    #ostos-sivu.active {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+
+#popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: fit-content;
+    padding: 30px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.sulje-btn {
+    align-self: flex-end;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: #24305E;
+    color: #fff;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.sulje-btn:hover {
+    background-color: #374785;
+    cursor: pointer;
+}
+
+/*loppu*/
+
+/*Formi tyylilyylit*/
+
+.formin-tausta {
+    border: solid 2px #24305E;
+    margin: 30px;
+    margin-top: 0;
+    background-color: #374785;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+form {
+    margin-block-end: 0;
+    padding: 0;
+}
+
+.form-otsikko {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: snow;
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.nimi-mail-box{
+    display: flex;
+}
+
+
+input[type=text] {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+    margin-right: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: snow;
+    opacity: 1; /* Firefox */
+  }
+
+input[type=email] {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+}
+
+input:focus {
+    background-color: #A8D0E6;
+}
+textarea:focus {
+    background-color: #A8D0E6;
+}
+
+
+input[type=submit] {
+    background-color: #24305E;
+    width: 100%;
+    padding: 10px;
+    color: snow;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: snow;
+}
+
+.form-hr {
+    border-color: #A8D0E6;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    align-content: center;
+    color: snow;
+    font-size: 1.2em;
+}
+
+
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    border: solid 2px #A8D0E6;
+    outline: none;
+    background-color: #374785;
+    color: snow;
+
+    resize: none;
+}
+
+.kiitos-viesti {
+    color: snow;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/*Formi hommien loppu*/
+.img-magnifier-container {
+    position: relative;
+  }
+  
+  .img-magnifier-glass {
+    position: absolute;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+  }
+/*Tuoteluokat tyylittely*/
+.tuoteluokat-holder {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.tuoteluokat-holder a {
+    border: 1.2px solid black;
+    border-radius: 6px;
+    align-content: center;
+    width: 183px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: snow;
+    text-decoration: none;
+    color: snow;
+}
+
+.tuoteluokat-holder a  img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+
+.tuoteluokat-holder a  p {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.tuoteluokat-holder a:hover {
+    background-color: #e3e3e3;
+}
+
+
+
+/*Tuoteluokat loppu*/
+/*Tuote tyylittelyt*/
+.kaikki-tuotteet-container {
+    text-align: center;
+}
+
+.tuote-container {
+    cursor: pointer;
+    text-align: center; 
+    display: inline-block;
+    background-color: white;
+    border: 1.2px solid #777;
+    border-radius: 6px;
+    width: 240px;
+    height: 240px;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.tuote-nimi {
+    margin-top: 15px;
+    color: #333;
+    font-weight: lighter;
+    font-size: 1.9em;
+}
+
+.tuote-kuva {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.tuote-hinta {
+    color: #555;
+    font-weight: bold;
+}
+
+.tuote-saatavuus {
+    padding: 4px;
+    background-color: #ce2029;
+    color: snow;
+    font-weight: lighter;
+    font-size: 1.25em;
+}
+/*Tuote tyylittelyt loppu*/
+/*popup tuotteiden tyylit*/
+.popup-section1 {
+    float: left;
+}
+
+.popup-section2 {
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.class-tuote-otsikko-popup {
+    font-weight: 400;
+    text-align: center;
+}
+
+.tuote-kuva-popup {
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 250px;
+    width: 250px;
+}
+
+.tuote-kuvaus-popup {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 10px;    
+}
+
+.tuote-hinta-popup {
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    background-color: #ce2029;
+    color: snow;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.s-s-popups {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.soita-popup {
+    padding-right: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.s-posti-popup {
+    padding-left: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*ptl loppu*/
