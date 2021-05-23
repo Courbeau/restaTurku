@@ -458,7 +458,6 @@ textarea {
 }
 
 .tuote-container {
-    cursor: pointer;
     position: relative;
     text-align: center; 
     display: flex;
@@ -488,6 +487,7 @@ textarea {
 
 .tuote-kuva {
     height: 420px;
+    flex: none;
 }
 
 .tuote-kuvaus {
