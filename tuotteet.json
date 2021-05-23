@@ -1,92 +1,5 @@
 [
     {
-        "id": "lapio",
-        "luokka": "astianpesu&esikäsittely",
-        "nimi": {
-            "FI": "Lapio",
-            "SV": "Skyffel",
-            "EN": "Shovel"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä kaivetaan maata",
-            "SV": "Med detta kan du gräva mark",
-            "EN": "With this you can dig ground"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "hinta": "74,99€",
-        "kuvanNimi":"pictures/lapio.png"
-
-    },
-    {
-    
-        "id": "miekka",
-        "luokka": "kahvi-&baarilaitteet",
-        "nimi": {
-            "FI": "Miekka",
-            "SV": "Skyffel",
-            "EN": "Sword"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä miekkaillaan",
-            "SV": "asdasfafa adsafagdasgds gas",
-            "EN": "With this you fight enemies"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Loppuunmyyty",
-            "SV": "Utsåld",
-            "EN": "Sold out"
-        },
-        "hinta": "54,99€",
-        "kuvanNimi":"pictures/miekka.png"
-    },
-    {
-        "id": "kuokka",
-        "luokka": "kahvi-&baarilaitteet",
-        "nimi": {
-            "FI": "Kuokka",
-            "SV": "Skyffel",
-            "EN": "Hoe"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä viljellään maata",
-            "SV": "jasfanksflaf adsafagdasgds gas",
-            "EN": "With this you farm land"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Tilattavissa",
-            "SV": "Finns att beställa",
-            "EN": "Available to order"
-        },
-        "hinta": "199,99€",
-        "kuvanNimi":"pictures/kuokka.png"
-
-    },
-    {   
-        "id": "kirves",
-        "luokka": "astianpesu&esikäsittely",
-        "nimi": {            
-            "FI": "Kirves",
-            "SV": "Skyffel",
-            "EN": "Axe"
-        },
-        "tuotekuvaus": {
-            "FI": "Tällä hakataan maata",
-            "SV": "sjasfanckacn adsafagdasgds gas",
-            "EN": "With this you punch trees"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "hinta": "20,99€",
-        "kuvanNimi":"pictures/kirves.png"
-    },
-    {
         "id": "pizzalapio1",
         "luokka": "pizza_välineet",
         "nimi": {
@@ -95,76 +8,16 @@
             "EN": "Pizzalapio"
         },
         "tuotekuvaus": {
-            "FI": "Pizzalapiot koot 25-60cm",
-            "SV": "Pizzalapiot koot 25-60cm",
-            "EN": "Pizzalapiot koot 25-60cm"
+            "FI": "Koot 25-60cm",
+            "SV": "Koot 25-60cm",
+            "EN": "Koot 25-60cm"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/pizzalapiot1.jpg"
-    },
-    {
-        "id": "pizzalapio2",
-        "luokka": "pizza_välineet",
-        "nimi": {
-            "FI": "Pizzalapio",
-            "SV": "Pizzalapio",
-            "EN": "Pizzalapio"
-        },
-        "tuotekuvaus": {
-            "FI": "Pizzalapiot koot 25-60cm",
-            "SV": "Pizzalapiot koot 25-60cm",
-            "EN": "Pizzalapiot koot 25-60cm"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "kuvanNimi":"pictures/pizzalapiot2.jpg"
-    },
-    {
-        "id": "pizzalapio3",
-        "luokka": "pizza_välineet",
-        "nimi": {
-            "FI": "Pizzalapio",
-            "SV": "Pizzalapio",
-            "EN": "Pizzalapio"
-        },
-        "tuotekuvaus": {
-            "FI": "Pizzalapiot koot 25-60cm",
-            "SV": "Pizzalapiot koot 25-60cm",
-            "EN": "Pizzalapiot koot 25-60cm"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "kuvanNimi":"pictures/pizzalapiot3.jpg"
-    },
-    {
-        "id": "pizzalapio4",
-        "luokka": "pizza_välineet",
-        "nimi": {
-            "FI": "Pizzalapio",
-            "SV": "Pizzalapio",
-            "EN": "Pizzalapio"
-        },
-        "tuotekuvaus": {
-            "FI": "Pizzalapiot koot 25-60cm",
-            "SV": "Pizzalapiot koot 25-60cm",
-            "EN": "Pizzalapiot koot 25-60cm"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "kuvanNimi":"pictures/pizzalapiot4.jpg"
+        "kuvat": ["pictures/pizzalapiot1.jpg", "pictures/pizzalapiot2.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot4.jpg"]
     },
     {
         "id": "pizzalautaset",
@@ -175,16 +28,16 @@
             "EN": "Pizzalautaset"
         },
         "tuotekuvaus": {
-            "FI": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
-            "SV": "Pizzalautaset posliinia 0/32cm, ja 35 cm",
-            "EN": "Pizzalautaset posliinia 0/32cm, ja 35 cm"
+            "FI": "Posliinia 0/32cm, ja 35 cm",
+            "SV": "Posliinia 0/32cm, ja 35 cm",
+            "EN": "Posliinia 0/32cm, ja 35 cm"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/pizzalautaset.jpg"
+        "kuvat": ["pictures/pizzalautaset.jpg"]
     },
     {
         "id": "pizzaleikkuualusta",
@@ -195,16 +48,16 @@
             "EN": "Pizzaleikkuualusta"
         },
         "tuotekuvaus": {
-            "FI": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
-            "SV": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia.",
-            "EN": "Pizzaleikkuualusta 0/35 cm, elintarvikemuodi, 0/45 cm elintarvitemuovia."
+            "FI": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia.",
+            "SV": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia.",
+            "EN": "0/35 cm, elintarvikemuovia, 0/45 cm elintarvitemuovia."
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/pizzaleikkuualustat.jpg"
+        "kuvat": ["pictures/pizzaleikkuualustat.jpg"]
     },
     {
         "id": "pizzakassi",
@@ -215,16 +68,16 @@
             "EN": "Pizzankuljetuskassi"
         },
         "tuotekuvaus": {
-            "FI": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
-            "SV": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
-            "EN": "Pizzankuljetuskassi, 4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen."
+            "FI": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "SV": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen.",
+            "EN": "4:lle pizzalle. 35x35 cm sekä 45x45 cm. Lämpöeristetty, kompakti ja helppohoitoinen."
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/pizzakassi350.jpg"
+        "kuvat": ["pictures/pizzakassi350.jpg", "pictures/pizzakassitboksissa.jpg"]
     },
     {
         "id": "pizzauuniharja",
@@ -235,24 +88,24 @@
             "EN": "Pizzauuniharja"
         },
         "tuotekuvaus": {
-            "FI": "Pizzauuniharja, pehmeä/jauho.",
-            "SV": "Pizzauuniharja, pehmeä/jauho.",
-            "EN": "Pizzauuniharja, pehmeä/jauho."
+            "FI": "Pehmeä/jauho",
+            "SV": "Pehmeä/jauho",
+            "EN": "Pehmeä/jauho"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/pizzauuniharja.jpg"
+        "kuvat": ["pictures/pizzauuniharja.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
     },
     {
         "id": "terasharja",
         "luokka": "pizza_välineet",
         "nimi": {
-            "FI": "Teräsharja",
-            "SV": "Teräsharja",
-            "EN": "Teräsharja"
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
         },
         "tuotekuvaus": {
             "FI": "Teräsharja metalliskraballa.",
@@ -264,6 +117,6 @@
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvanNimi":"pictures/terasharja.jpg"
+        "kuvat": ["pictures/terasharja.jpg", "pictures/skraba.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
     }
 ]

@@ -18,14 +18,22 @@ const TuoteluokatSivu = {
   }
 } 
 
+const renderTuoteKuva = (kuva) => {
+  return `<img class="tuote-kuva" src="${kuva}"/>`
+}
 
 const renderTuote = (tuote) => {
   return `
-  <a href="#/tuotteet/${tuote.id}" class="tuote-container">
+  <div class="tuote-container">
     <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
-    <img class="tuote-kuva" src="${tuote.kuvanNimi}"/>
+    <div class="tuote-kuvat-frame">
+      <div class="tuote-kuvat">
+      ${tuote.kuvat.map(kuva => renderTuoteKuva(kuva)).join("\n")}
+      </div>
+    </div>
+    <span class="tuote-kuvaus">${tuote.tuotekuvaus[window.kieli]}</span>
     <br>
-  </a>
+  </div>
   `
 }
 
@@ -155,6 +163,8 @@ const Yläpalkki = {
             <nav class="menu">
                 <li><a class="site-link ${sivu === "tuotteet" ? "current" : ""}" href="#/">${window.tekstit[window.kieli].sitelink1}</a></li>
                 <li><a class="site-link ${sivu === "yrityksesta" ? "current" : ""}" href="#/yhteystiedot">${window.tekstit[window.kieli].sitelink2}</a></li>
+                <li><a class="site-link" href="tel:040-5245210"><img title="Soita" class="icon-navbar puhelin-icon" src="pictures/phone.png" alt="puhelinnumero"></a></li>
+                <li><a class="site-link" href="mailto:info@restaturku.fi"><img title="Lähetä sähköposti" class="icon-navbar s-posti-icon" src="pictures/mail.png" alt="s-posti"> </a></li>
             </nav>
         </div>
         </header>
@@ -217,9 +227,6 @@ const routes = [
 
   const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
   const findComponentByPath = (path, routes) => {
-    console.log(routes.find(r => {
-      console.log(r.path, path, r.path === path);
-      return r.path === path}))
     return routes.find(r => r.path === path) || undefined;
   }
 
