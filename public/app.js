@@ -219,9 +219,6 @@ const routes = [
 
   const parseLocation = () => location.hash.slice(1).toLowerCase() || '/';
   const findComponentByPath = (path, routes) => {
-    console.log(routes.find(r => {
-      console.log(r.path, path, r.path === path);
-      return r.path === path}))
     return routes.find(r => r.path === path) || undefined;
   }
 
