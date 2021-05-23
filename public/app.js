@@ -150,31 +150,6 @@ const TuoteSivu = (tuote) => {
   }
 }
 
-const MessageForm = {
-    render: () => {
-      return `
-      <div class="formin-tausta">
-        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyPACzMbLllY4o7PuntVAavJ7tasgSHNvQ39q7U/exec">
-          <h3 class="Form-otsikko">${window.tekstit[window.kieli].formOtsikko}</h3>
-          <hr class="form-hr">
-          <div class="nimi-mail-box">
-            <input type="text" id="name" name="name" required placeholder="${window.tekstit[window.kieli].formNimi}">
-            <input id="email" name="email" type="email" required placeholder="${window.tekstit[window.kieli].formSposti}">
-          </div>
-          <br>
-          <textarea id="message" name="message" required cols="20" rows="4" placeholder="${window.tekstit[window.kieli].formAsia}"></textarea>
-          <input type="submit" class="button-success pure-button button-xlarge" value="${window.tekstit[window.kieli].formLähetäNappula}">              
-          <!-- Kiitosviesti-->
-          <div style="display:none" class="thankyou_message">
-              <!-- Tätä viestiä voi kustomoida! -->
-              <h2 class="kiitos-viesti">Kiitos että otitte yhteyttä meihin! Palaamme asiaan pian!</h2>
-          </div>    
-        </form>
-      </div>
-      `
-    }
-}
-
 const Yläpalkki = {
   kieliVaihto: (event) => {
     const selecti = window.document.getElementsByClassName('kieli-valikko-selecti')[0];
@@ -192,13 +167,6 @@ const Yläpalkki = {
             <nav class="menu">
                 <li><a class="site-link ${sivu === "tuotteet" ? "current" : ""}" href="#/">${window.tekstit[window.kieli].sitelink1}</a></li>
                 <li><a class="site-link ${sivu === "yrityksesta" ? "current" : ""}" href="#/yhteystiedot">${window.tekstit[window.kieli].sitelink2}</a></li>
-                <li><form class="kieli-valikko">
-                <select class="kieli-valikko-selecti">
-                  <option value="FI" ${window.kieli === "FI" ? "selected" : ""}>Suomi</option>
-                  <option value="SV" ${window.kieli === "SV" ? "selected" : ""}>Svenska</option>
-                  <option value="EN" ${window.kieli === "EN" ? "selected" : ""}>English</option>
-                </select>
-              </form></li>
             </nav>
         </div>
         </header>
@@ -231,7 +199,6 @@ const YrityksestäSivu = {
               </div>
             </div>
             <h1 class="company-name">Resta Turku OY</h1>
-            ` + MessageForm.render() + `
           </div>
         </div>`
           
