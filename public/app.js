@@ -24,11 +24,16 @@ const renderTuoteKuva = (kuva) => {
 
 const renderTuote = (tuote) => {
   return `
-  <a href="#/tuotteet/${tuote.id}" class="tuote-container">
+  <div class="tuote-container">
     <h3 class="tuote-nimi">${tuote.nimi[window.kieli]}</h3>
-    ${tuote.kuvat.map(kuva => renderTuoteKuva(kuva)).join("\n")}
+    <div class="tuote-kuvat-frame">
+      <div class="tuote-kuvat">
+      ${tuote.kuvat.map(kuva => renderTuoteKuva(kuva)).join("\n")}
+      </div>
+    </div>
+    <span class="tuote-kuvaus">${tuote.tuotekuvaus[window.kieli]}</span>
     <br>
-  </a>
+  </div>
   `
 }
 
