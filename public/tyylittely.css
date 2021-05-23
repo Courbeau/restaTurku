@@ -454,20 +454,22 @@ textarea {
 .kaikki-tuotteet-container {
     text-align: center;
     margin-top: 1.5rem;
+    background-color: #374785;
 }
 
 .tuote-container {
     cursor: pointer;
     position: relative;
     text-align: center; 
-    display: inline-block;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     text-decoration: none;
 }
 
 .tuote-nimi {
     position: absolute;
-    margin: 1rem;
+    margin: 3rem;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     color: #fff;
@@ -475,9 +477,30 @@ textarea {
     font-size: 1.9em;
 }
 
+.tuote-kuvat-frame {
+    width: 100vw;
+    overflow: scroll;
+}
+
+.tuote-kuvat {
+    display: flex;
+}
+
 .tuote-kuva {
-    height: 320px;
-    width: 320px;
+    height: 420px;
+}
+
+.tuote-kuvaus {
+    bottom: 0;
+    position: absolute;
+    margin: 3rem;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-align: left;
+    max-width: 300px;
 }
 
 .tuote-hinta {
