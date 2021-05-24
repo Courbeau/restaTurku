@@ -180,9 +180,11 @@ const YrityksestäSivu = {
         <div class="koko-yrityksesta-sivu">
           <div class="yrityksesta-kuva"><p class="ekologiset-tuotteet">${window.tekstit[window.kieli].ekologisetTuotteet}</p></div>
           <div class="yrityksesta-sivu">
-            <h2 class="yrityksesta-otsikko">${window.tekstit[window.kieli].otsikko2}</h2>
             <div class="content-text">
-                <p class="text-osio">${window.tekstit[window.kieli].tarina}</p>
+                <p class="text-osio">${window.tekstit[window.kieli].perus}</p>
+            </div>
+            <div class="content-text">
+                <p class="text-osio text-osio-tarina">${window.tekstit[window.kieli].tarina}</p>
             </div>
             <div class="kaikki-iconsit-kaikki-muut">
               <div class="iconi-muu puhelin_y-tunnus">
@@ -199,7 +201,7 @@ const YrityksestäSivu = {
             <h1 class="company-name">Resta Turku OY</h1>
           </div>
         </div>`
-          
+
     }
 
   } 
