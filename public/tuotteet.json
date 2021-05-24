@@ -3,9 +3,9 @@
         "id": "pizzalapio1",
         "luokka": "pizza_välineet",
         "nimi": {
-            "FI": "Pizzalapio",
-            "SV": "Pizzalapio",
-            "EN": "Pizzalapio"
+            "FI": "Emmi Pizzalapio",
+            "SV": "Emmi Pizzalapio",
+            "EN": "Emmi Pizzalapio"
         },
         "tuotekuvaus": {
             "FI": "Koot 25-60cm",
@@ -23,9 +23,9 @@
         "id": "terasharja",
         "luokka": "pizza_välineet",
         "nimi": {
-            "FI": "Pizzauuniharja",
-            "SV": "Pizzauuniharja",
-            "EN": "Pizzauuniharja"
+            "FI": "Emmi Pizzauuniharja",
+            "SV": "Emmi Pizzauuniharja",
+            "EN": "Emmi Pizzauuniharja"
         },
         "tuotekuvaus": {
             "FI": "Teräsharja metalliskraballa.",
@@ -43,9 +43,9 @@
         "id": "pizzauuniharja",
         "luokka": "pizza_välineet",
         "nimi": {
-            "FI": "Pizzauuniharja",
-            "SV": "Pizzauuniharja",
-            "EN": "Pizzauuniharja"
+            "FI": "Emmi Pizzauuniharja",
+            "SV": "Emmi Pizzauuniharja",
+            "EN": "Emmi Pizzauuniharja"
         },
         "tuotekuvaus": {
             "FI": "Pehmeä/jauho",
