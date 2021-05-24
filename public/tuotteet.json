@@ -20,6 +20,46 @@
         "kuvat": ["pictures/pizzalapiot1.jpg", "pictures/pizzalapiot2.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot4.jpg"]
     },
     {
+        "id": "terasharja",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
+        },
+        "tuotekuvaus": {
+            "FI": "Teräsharja metalliskraballa.",
+            "SV": "Teräsharja metalliskraballa.",
+            "EN": "Teräsharja metalliskraballa."
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvat": ["pictures/terasharja.jpg", "pictures/skraba.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
+    },
+    {
+        "id": "pizzauuniharja",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Pizzauuniharja",
+            "SV": "Pizzauuniharja",
+            "EN": "Pizzauuniharja"
+        },
+        "tuotekuvaus": {
+            "FI": "Pehmeä/jauho",
+            "SV": "Pehmeä/jauho",
+            "EN": "Pehmeä/jauho"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvat": ["pictures/pizzauuniharja.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
+    },
+    {
         "id": "pizzalautaset",
         "luokka": "pizza_välineet",
         "nimi": {
@@ -78,45 +118,5 @@
             "EN": "Available"
         },
         "kuvat": ["pictures/pizzakassi350.jpg", "pictures/pizzakassitboksissa.jpg"]
-    },
-    {
-        "id": "pizzauuniharja",
-        "luokka": "pizza_välineet",
-        "nimi": {
-            "FI": "Pizzauuniharja",
-            "SV": "Pizzauuniharja",
-            "EN": "Pizzauuniharja"
-        },
-        "tuotekuvaus": {
-            "FI": "Pehmeä/jauho",
-            "SV": "Pehmeä/jauho",
-            "EN": "Pehmeä/jauho"
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "kuvat": ["pictures/pizzauuniharja.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
-    },
-    {
-        "id": "terasharja",
-        "luokka": "pizza_välineet",
-        "nimi": {
-            "FI": "Pizzauuniharja",
-            "SV": "Pizzauuniharja",
-            "EN": "Pizzauuniharja"
-        },
-        "tuotekuvaus": {
-            "FI": "Teräsharja metalliskraballa.",
-            "SV": "Teräsharja metalliskraballa.",
-            "EN": "Teräsharja metalliskraballa."
-        },
-        "tuotteenSaatavuus": {
-            "FI": "Saatavilla",
-            "SV": "Tillgängliga",
-            "EN": "Available"
-        },
-        "kuvat": ["pictures/terasharja.jpg", "pictures/skraba.jpg", "pictures/pizzauuniharjatpakkauksessa.jpg"]
     }
 ]
