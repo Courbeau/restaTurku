@@ -8,6 +8,15 @@ address {
 
 /*yrityksestä sivun layout*/
 
+.koko-yrityksesta-sivu {
+    background-color: #E9ebee;
+}
+
+.yrityksesta-sivu {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 @media only screen and (min-width: 800px) {
     .koko-yrityksesta-sivu {
         display: flex;
@@ -95,7 +104,7 @@ address {
 }
 
 .company-name {
-    margin-top: 1em;
+    padding: 2rem;
     font-size: 3em;
     text-align: center;
     font-weight: bold;
@@ -118,7 +127,7 @@ header {
 .header-container {
     background-color: #24305E;
     text-align: center;
-    box-shadow: 0px 3px 3px #151931;
+    box-shadow: 0 3px 3px #151931;
 }
 
 .menu {
@@ -185,7 +194,7 @@ html, body {
 }
 
 body {
-    background-color: #E9ebee;
+    background-color: #374785;
 }
 
 .tuotteet-otsikko {
@@ -454,7 +463,7 @@ textarea {
 /*Tuote tyylittelyt*/
 .kaikki-tuotteet-container {
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
     background-color: #374785;
 }
 
@@ -463,15 +472,16 @@ textarea {
     text-align: center; 
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
     text-decoration: none;
 }
 
 .tuote-nimi {
     position: absolute;
-    margin: 3rem;
+    margin: 2.5rem;
+    padding: 0.5rem;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    background-color: rgba(36, 48, 94, 0.15);
     color: #fff;
     font-weight: lighter;
     font-size: 1.9em;
@@ -488,18 +498,20 @@ textarea {
 
 .tuote-kuva {
     margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     height: 420px;
     flex: none;
     box-shadow: 3px 3px 3px #151931;
 }
 
 .tuote-kuvaus {
-    bottom: 0;
+    bottom: 1rem;
     position: absolute;
-    margin: 3rem;
+    margin: 2.5rem;
+    padding: 0.5rem;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    background-color: rgba(36, 48, 94, 0.15);
     color: #fff;
     font-weight: lighter;
     font-size: 1.3em;
