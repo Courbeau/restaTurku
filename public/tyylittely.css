@@ -8,6 +8,15 @@ address {
 
 /*yrityksestä sivun layout*/
 
+.koko-yrityksesta-sivu {
+    background-color: #E9ebee;
+}
+
+.yrityksesta-sivu {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 @media only screen and (min-width: 800px) {
     .koko-yrityksesta-sivu {
         display: flex;
@@ -95,7 +104,7 @@ address {
 }
 
 .company-name {
-    margin-top: 1em;
+    padding: 2rem;
     font-size: 3em;
     text-align: center;
     font-weight: bold;
@@ -185,7 +194,7 @@ html, body {
 }
 
 body {
-    background-color: #E9ebee;
+    background-color: #374785;
 }
 
 .tuotteet-otsikko {
