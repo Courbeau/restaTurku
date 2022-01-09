@@ -5,7 +5,7 @@
 :root {
     --main-bg-color: #cacacd;
     --header-bg-color: #d9d9e3;
-    --header-bg-hover: #dfe0ea;
+    --header-bg-hover: #eaebf5;
     --text-color-dark: #2a2929;
     --bg-color-light: #f3f3f3;
 }
@@ -138,8 +138,9 @@ header {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    min-height: 48px;
 }
 
 .navbar a {
@@ -179,6 +180,7 @@ header {
 
 .site-link:hover {
     background-color: var(--header-bg-hover);
+    border-radius: 3px;
     cursor: pointer;
 }
 .sivun-nimi {
