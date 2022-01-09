@@ -2,6 +2,13 @@
     font-family: system-ui;
 }
 
+:root {
+    --main-bg-color: #E9ebee;
+    --header-bg-color: #9697a8;
+    --header-bg-selected: #6e7081;
+    --header-bg-hover: #8b8eaa;
+}
+
 address {
     margin: 1.5rem;
 }
@@ -9,7 +16,7 @@ address {
 /*yrityksestä sivun layout*/
 
 .koko-yrityksesta-sivu {
-    background-color: #E9ebee;
+    background-color: var(--main-bg-color);
 }
 
 .yrityksesta-sivu {
@@ -125,9 +132,9 @@ header {
 }
 
 .header-container {
-    background-color: #24305E;
+    background-color: var(--header-bg-color);
     text-align: center;
-    box-shadow: 0 3px 3px #151931;
+    box-shadow: 0 0 4px 3px rgba(21, 25, 49, 0.3);
 }
 
 .menu {
@@ -160,7 +167,7 @@ header {
 
 
 .kieli-valikko-selecti:hover {
-    background-color: #374785;
+    background-color: var(--header-bg-hover);
     cursor: pointer;
 }
 
@@ -172,7 +179,7 @@ header {
 
 
 .site-link:hover {
-    background-color: #374785;
+    background-color: var(--header-bg-hover);
     cursor: pointer;
 }
 .sivun-nimi {
@@ -182,7 +189,7 @@ header {
 }
 
 .current {
-    background-color: #374785;
+    background-color: var(--header-bg-selected);
 }
 
 /*Ylävalikko osuus*/
@@ -194,7 +201,7 @@ html, body {
 }
 
 body {
-    background-color: #374785;
+    background-color: var(--main-bg-color);
 }
 
 .tuotteet-otsikko {
@@ -274,7 +281,7 @@ body {
     align-self: flex-end;
     text-decoration: none;
     border-radius: 6px;
-    background-color: #24305E;
+    background-color: var(--main-bg-color);
     color: #fff;
     padding: 10px;
     padding-top: 0;
@@ -284,7 +291,7 @@ body {
 }
 
 .sulje-btn:hover {
-    background-color: #374785;
+    background-color: var(--header-bg-hover);
     cursor: pointer;
 }
 
@@ -296,7 +303,7 @@ body {
     border: solid 2px #24305E;
     margin: 30px;
     margin-top: 0;
-    background-color: #374785;
+    background-color: var(--main-bg-color);
     border-radius: 6px;
     padding: 20px;
 }
@@ -327,7 +334,7 @@ input[type=text] {
     border-radius: 6px;
     border: solid 2px #A8D0E6;
     outline: none;
-    background-color: #374785;
+    background-color: var(--main-bg-color);
     color: snow;
     margin-right: 5px;
 }
@@ -344,7 +351,7 @@ input[type=email] {
     border-radius: 6px;
     border: solid 2px #A8D0E6;
     outline: none;
-    background-color: #374785;
+    background-color: var(--main-bg-color);
     color: snow;
 }
 
@@ -458,7 +465,7 @@ textarea {
 }
 
 .tuoteluokat-holder a:hover {
-    background-color: #e3e3e3;
+    background-color: var(--header-bg-hover);
 }
 
 
@@ -468,7 +475,7 @@ textarea {
 .kaikki-tuotteet-container {
     text-align: center;
     padding-top: 3.5rem;
-    background-color: #374785;
+    background-color: var(--main-bg-color);
 }
 
 .tuote-container {
@@ -501,11 +508,10 @@ textarea {
 }
 
 .tuote-kuva {
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     height: 420px;
     flex: none;
-    box-shadow: 3px 3px 3px #151931;
+    box-shadow: 0 0 2px 1px rgba(3, 2, 2, 0.31);
 }
 
 .tuote-kuvaus {
