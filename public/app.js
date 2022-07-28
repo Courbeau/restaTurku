@@ -19,7 +19,14 @@ const TuoteluokatSivu = {
 } 
 
 const renderTuoteKuva = (kuva) => {
-  return `<img class="tuote-kuva" src="${kuva}"/>`
+    if (kuva.endsWith(".mp4")) {
+        return `
+<video class="tuote-kuva" autoPlay muted loop playsinline>
+   <source src="${kuva}" type="video/mp4"/>
+</video>
+`;
+    }
+    return `<img class="tuote-kuva" src="${kuva}"/>`;
 }
 
 const renderTuote = (tuote) => {

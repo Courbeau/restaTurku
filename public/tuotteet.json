@@ -8,16 +8,16 @@
             "EN": "Emmi Pizzalapio"
         },
         "tuotekuvaus": {
-            "FI": "Koot 25-60cm",
-            "SV": "Koot 25-60cm",
-            "EN": "Koot 25-60cm"
+            "FI": "Koot 25-60cm,<br>Myös kotikäyttöön!",
+            "SV": "Koot 25-60cm,<br>Myös kotikäyttöön!",
+            "EN": "Koot 25-60cm,<br>Myös kotikäyttöön!"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvat": ["pictures/pizzalapiot2.jpg", "pictures/pizzalapiot4.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot1.jpg"]
+        "kuvat": ["pictures/pizzalapio.mp4", "pictures/pizzalapiot2.jpg", "pictures/pizzalapiot4.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot1.jpg"]
     },
     {
         "id": "terasharja",
