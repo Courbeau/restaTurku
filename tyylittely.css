@@ -4,8 +4,8 @@
 
 :root {
     --main-bg-color: #cacacd;
-    --header-bg-color: #d9d9e3;
-    --header-bg-hover: #eaebf5;
+    --header-bg-color: #f6f6ff;
+    --header-bg-hover: #e4e4e7;
     --text-color-dark: #2a2929;
     --bg-color-light: #f3f3f3;
 }
@@ -509,10 +509,10 @@ textarea {
 }
 
 .tuote-kuva {
-    margin: 1rem;
+    margin: 0.5rem;
     height: 420px;
     flex: none;
-    box-shadow: 0 0 3px 2px rgb(123, 123, 123);
+    box-shadow: 0 0 3px 1px rgb(123, 123, 123);
     border-radius: 3px;
 }
 
