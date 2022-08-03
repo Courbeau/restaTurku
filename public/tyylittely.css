@@ -483,7 +483,6 @@ textarea {
     position: relative;
     text-align: center; 
     display: flex;
-    flex-direction: column;
     text-decoration: none;
 }
 
@@ -497,6 +496,7 @@ textarea {
     color: #fff;
     font-weight: lighter;
     font-size: 1.9em;
+    border-radius: 3px;
 }
 
 .tuote-kuvat-frame {
@@ -517,7 +517,7 @@ textarea {
 }
 
 .tuote-kuvaus {
-    bottom: 1rem;
+    bottom: 0;
     position: absolute;
     margin: 2.5rem;
     padding: 0.5rem;
@@ -529,6 +529,7 @@ textarea {
     font-size: 1.3em;
     text-align: left;
     max-width: 300px;
+    border-radius: 3px;
 }
 
 .tuote-hinta {
