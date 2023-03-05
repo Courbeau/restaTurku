@@ -1,5 +1,25 @@
 [
     {
+        "id": "kotilapio",
+        "luokka": "pizza_välineet",
+        "nimi": {
+            "FI": "Koti Lättynen™️",
+            "SV": "Koti Lättynen™️",
+            "EN": "Koti Lättynen™️"
+        },
+        "tuotekuvaus": {
+            "FI": "Koko 28cm,<br>Kotikäyttöön",
+            "SV": "Koko 28cm,<br>Kotikäyttöön",
+            "EN": "Koko 28cm,<br>Kotikäyttöön"
+        },
+        "tuotteenSaatavuus": {
+            "FI": "Saatavilla",
+            "SV": "Tillgängliga",
+            "EN": "Available"
+        },
+        "kuvat": ["pictures/pizzalapio.mp4"]
+    },
+    {
         "id": "pizzalapio1",
         "luokka": "pizza_välineet",
         "nimi": {
@@ -8,16 +28,16 @@
             "EN": "Emmi Pizzalapio"
         },
         "tuotekuvaus": {
-            "FI": "Koot 25-60cm,<br>Myös kotikäyttöön!",
-            "SV": "Koot 25-60cm,<br>Myös kotikäyttöön!",
-            "EN": "Koot 25-60cm,<br>Myös kotikäyttöön!"
+            "FI": "Koot 25-60cm,<br>Ammattikäyttöön",
+            "SV": "Koot 25-60cm,<br>Ammattikäyttöön",
+            "EN": "Koot 25-60cm,<br>Ammattikäyttöön"
         },
         "tuotteenSaatavuus": {
             "FI": "Saatavilla",
             "SV": "Tillgängliga",
             "EN": "Available"
         },
-        "kuvat": ["pictures/pizzalapio.mp4", "pictures/pizzalapiot2.jpg", "pictures/pizzalapiot4.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot1.jpg"]
+        "kuvat": ["pictures/pizzalapiot2.jpg", "pictures/pizzalapiot4.jpg", "pictures/pizzalapiot3.jpg", "pictures/pizzalapiot1.jpg"]
     },
     {
         "id": "terasharja",
